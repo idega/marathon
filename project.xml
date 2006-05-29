@@ -92,6 +92,13 @@
 	   </dependency>
 	   <dependency>
 	      <groupId>bundles</groupId>
+	      <artifactId>com.idega.block.text</artifactId>
+	      <version>SNAPSHOT</version>
+	      <type>iwbar</type>
+	      <url>http://www.idega.com</url>
+	   </dependency>
+	   <dependency>
+	      <groupId>bundles</groupId>
 	      <artifactId>com.idega.block.poll</artifactId>
 	      <version>SNAPSHOT</version>
 	      <type>iwbar</type>
