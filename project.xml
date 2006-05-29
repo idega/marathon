@@ -92,7 +92,7 @@
 	   </dependency>
 	   <dependency>
 	      <groupId>bundles</groupId>
-	      <artifactId>com.idega.block.block</artifactId>
+	      <artifactId>com.idega.block.poll</artifactId>
 	      <version>SNAPSHOT</version>
 	      <type>iwbar</type>
 	      <url>http://www.idega.com</url>
