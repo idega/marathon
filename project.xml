@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-
     <pomVersion>3</pomVersion>
-    <extend>${idegaweb.application.base.project.dir}/project.xml</extend>
+	<extend>../eplatform/project.xml</extend>
     <name>ePlatform</name>
     <groupId>iw-applications</groupId>
     <artifactId>marathon</artifactId>
