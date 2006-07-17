@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="idegaWeb"
+  href="http://www.idega.com/">
+
+  <title>idegaWeb</title>
+
+  <body>
+    <menu name="Home">
+      <item name="idegaWeb Marathon"  href="/index.html" />
+    </menu>
+
+
+  </body>
+</project>

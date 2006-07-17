@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<document>
+
+  <properties>
+    <author email="laddi@idega.com">Laddi Helgason</author>
+    <title>Welcome to idegaWeb</title>
+  </properties>
+
+  <body>
+
+    <section name="idegaWeb Marathon">
+      <p>
+        This is the base web-application for the Marathon application.<br/>
+      </p>
+    </section>
+
+
+  </body>
+</document>
