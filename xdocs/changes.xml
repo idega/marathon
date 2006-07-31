@@ -5,6 +5,12 @@
   </properties>
   <body>
 
+	<release version="3.1.6" date="2006-07-31">
+		<action dev="laddi" type="update">
+			Added bundles : com.idega.block.websearch, com.idega.block.datareport, com.idega.block.importer, and is.idega.idegaweb.member.
+		</action>     
+	</release>
+
 	<release version="3.1.5" date="2006-07-27">
 		<action dev="laddi" type="update">
 			Switched db.properties with current from server.

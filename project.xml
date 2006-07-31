@@ -6,7 +6,7 @@
   <name>marathon</name>
   <groupId>iw-applications</groupId>
   <artifactId>marathon</artifactId>
-  <currentVersion>3.1.5</currentVersion>
+  <currentVersion>3.1.6</currentVersion>
   <inceptionYear>2000</inceptionYear>
   <shortDescription>Marathon WebApp</shortDescription>
   <dependencies>
@@ -21,6 +21,34 @@
     <dependency>
       <groupId>bundles</groupId>
       <artifactId>com.idega.block.poll</artifactId>
+      <version>3.1.0</version>
+      <type>iwbar</type>
+      <url>http://www.idega.com</url>
+    </dependency>
+    <dependency>
+      <groupId>bundles</groupId>
+      <artifactId>is.idega.idegaweb.member</artifactId>
+      <version>1.0.2</version>
+      <type>iwbar</type>
+      <url>http://www.idega.com</url>
+    </dependency>
+    <dependency>
+      <groupId>bundles</groupId>
+      <artifactId>com.idega.block.websearch</artifactId>
+      <version>3.1.0</version>
+      <type>iwbar</type>
+      <url>http://www.idega.com</url>
+    </dependency>
+    <dependency>
+      <groupId>bundles</groupId>
+      <artifactId>com.idega.block.datareport</artifactId>
+      <version>3.1.0</version>
+      <type>iwbar</type>
+      <url>http://www.idega.com</url>
+    </dependency>
+    <dependency>
+      <groupId>bundles</groupId>
+      <artifactId>com.idega.block.importer</artifactId>
       <version>3.1.0</version>
       <type>iwbar</type>
       <url>http://www.idega.com</url>
