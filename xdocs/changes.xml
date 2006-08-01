@@ -4,6 +4,12 @@
     <author email="gimmi@idega.com">Grimur Jonsson</author>
   </properties>
   <body>
+	<release version="3.1.11" date="2006-08-01">
+		<action dev="gimmi" type="update">
+			Core updated to 3.1.8
+		</action>     
+	</release>
+
 	<release version="3.1.10" date="2006-08-01">
 		<action dev="gimmi" type="update">
 			Sibling discount added to 1.5km run
