@@ -92,7 +92,7 @@
       <groupId>bundles</groupId>
       <artifactId>is.idega.block.family</artifactId>
       <version>1.0.1</version>
-      <type>jar</type>
+      <type>iwbar</type>
       <url>http://www.idega.com/</url>
     </dependency>
     <dependency>
