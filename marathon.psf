@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+	<provider id="org.eclipse.team.cvs.core.cvsnature">
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,applications/eplatform,eplatform,BRANCH_PLATFORM_3_1"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,applications/marathon,marathon"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.core.bundle,com.idega.core,BRANCH_PLATFORM_3_1"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.user.bundle,com.idega.user,BRANCH_PLATFORM_3_1"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.content.bundle,com.idega.content,BRANCH_PLATFORM_3_1"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.slide.bundle,com.idega.slide,BRANCH_PLATFORM_3_1"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/org.apache.slide.bundle,org.apache.slide,BRANCH_PLATFORM_3_1"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.builder.bundle,com.idega.builder,BRANCH_PLATFORM_3_1"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.web2.0.bundle,com.idega.block.web2.0,BRANCH_PLATFORM_3_1"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/org.apache.axis.bundle,org.apache.axis,BRANCH_PLATFORM_3_1"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/is.idega.block.family.bundle,is.idega.block.family"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/is.idega.idegaweb.marathon.bundle,is.idega.idegaweb.marathon"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/is.idega.idegaweb.member.bundle,is.idega.idegaweb.member"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.creditcard.bundle,com.idega.block.creditcard"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.dataquery.bundle,com.idega.block.dataquery"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.datareport.bundle,com.idega.block.datareport"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.rss.bundle,com.idega.block.rss"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.webface.bundle,com.idega.webface"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.entity.bundle,com.idega.block.entity"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.media.bundle,com.idega.block.media"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.text.bundle,com.idega.block.text"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.importer.bundle,com.idega.block.importer"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/"/>
+	</provider>
+</psf>
