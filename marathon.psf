@@ -23,5 +23,15 @@
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.media.bundle,com.idega.block.media"/>
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.text.bundle,com.idega.block.text"/>
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.importer.bundle,com.idega.block.importer"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.article.bundle,com.idega.block.article"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.banner.bundle,com.idega.block.banner"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.help.bundle,com.idega.block.help"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.image.bundle,com.idega.block.image"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.login.bundle,com.idega.block.login"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.navigation.bundle,com.idega.block.navigation"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.poll.bundle,com.idega.block.poll"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.websearch.bundle,com.idega.block.websearch"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.developer.bundle,com.idega.developer"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.idegaweb.widget.bundle,com.idega.idegaweb.widget"/>		
 	</provider>
 </psf>
