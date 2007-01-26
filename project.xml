@@ -28,7 +28,7 @@
     <dependency>
       <groupId>bundles</groupId>
       <artifactId>is.idega.idegaweb.member</artifactId>
-      <version>1.0.2</version>
+      <version>1.0.4</version>
       <type>iwbar</type>
       <url>http://www.idega.com</url>
     </dependency>
@@ -91,14 +91,21 @@
     <dependency>
       <groupId>bundles</groupId>
       <artifactId>is.idega.idegaweb.marathon</artifactId>
-      <version>3.1.7</version>
+      <version>3.1.8</version>
       <type>iwbar</type>
       <url>http://www.idega.com</url>
     </dependency>
     <dependency>
       <groupId>bundles</groupId>
       <artifactId>is.idega.block.family</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
+      <type>iwbar</type>
+      <url>http://www.idega.com/</url>
+    </dependency>
+    <dependency>
+      <groupId>bundles</groupId>
+      <artifactId>is.idega.block.nationalregister</artifactId>
+      <version>1.0.3</version>
       <type>iwbar</type>
       <url>http://www.idega.com/</url>
     </dependency>
