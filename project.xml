@@ -6,7 +6,7 @@
   <name>marathon</name>
   <groupId>iw-applications</groupId>
   <artifactId>marathon</artifactId>
-  <currentVersion>3.1.16</currentVersion>
+  <currentVersion>3.1.17</currentVersion>
   <inceptionYear>2000</inceptionYear>
   <shortDescription>Marathon WebApp</shortDescription>
   <dependencies>
@@ -249,6 +249,11 @@
       <id>3.1.16</id>
       <name>3.1.16</name>
       <tag>EMARATHON_3_1_16</tag>
+    </version>
+    <version>
+      <id>3.1.17</id>
+      <name>3.1.17</name>
+      <tag>EMARATHON_3_1_17</tag>
     </version>
   </versions>
 </project>
