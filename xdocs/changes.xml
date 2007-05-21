@@ -5,7 +5,13 @@
   </properties>
   <body>
     
-  	
+  	<release version="3.1.18" date="2007-04-21">
+		<action dev="sigtryggur" type="update">
+			New admin-view to register new participants to run
+			Updated dependency for creditcard bundle from 3.1.4 to 3.1.11
+		</action>     
+	</release>  
+	
   	<release version="3.1.17" date="2007-03-27">
 		<action dev="sigtryggur" type="update">
 			New admin-view to set-up or edit runs
