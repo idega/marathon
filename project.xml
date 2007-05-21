@@ -77,7 +77,7 @@
     <dependency>
       <groupId>bundles</groupId>
       <artifactId>com.idega.block.creditcard</artifactId>
-      <version>3.1.8</version>
+      <version>3.1.11</version>
       <type>iwbar</type>
       <url>http://www.idega.com</url>
     </dependency>
