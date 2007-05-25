@@ -11,8 +11,12 @@
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.builder.bundle,com.idega.builder,BRANCH_PLATFORM_3_1"/>
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.web2.0.bundle,com.idega.block.web2.0,BRANCH_PLATFORM_3_1"/>
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.webface.bundle,com.idega.webface,BRANCH_PLATFORM_3_1"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.workspace.bundle,com.idega.workspace,BRANCH_PLATFORM_3_1"/>
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.faces.bundle,com.idega.faces,BRANCH_PLATFORM_3_1"/>
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.rss.bundle,com.idega.block.rss,BRANCH_PLATFORM_3_1"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.article.bundle,com.idega.block.article,BRANCH_PLATFORM_3_1"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.login.bundle,com.idega.block.login,BRANCH_PLATFORM_3_1"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.navigation.bundle,com.idega.block.navigation,BRANCH_PLATFORM_3_1"/>
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.media.bundle,com.idega.block.media,BRANCH_PLATFORM_3_1"/>
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.image.bundle,com.idega.block.image,BRANCH_PLATFORM_3_1"/>
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.text.bundle,com.idega.block.text,BRANCH_PLATFORM_3_1"/>
