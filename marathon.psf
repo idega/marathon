@@ -7,6 +7,7 @@
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.user.bundle,com.idega.user,BRANCH_PLATFORM_3_1"/>
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.content.bundle,com.idega.content,BRANCH_PLATFORM_3_1"/>
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.slide.bundle,com.idega.slide,BRANCH_PLATFORM_3_1"/>
+		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.entity.bundle,com.idega.entity,BRANCH_PLATFORM_3_1"/>
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/org.apache.slide.bundle,org.apache.slide,BRANCH_PLATFORM_3_1"/>
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.builder.bundle,com.idega.builder,BRANCH_PLATFORM_3_1"/>
 		<project reference="1.0,:extssh:code.idega.com:/idega/cvs,bundles/com.idega.block.web2.0.bundle,com.idega.block.web2.0,BRANCH_PLATFORM_3_1"/>
