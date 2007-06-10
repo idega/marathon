@@ -8,6 +8,7 @@
   	<release version="3.1.21" date="2007-06-08">
 		<action dev="sigtryggur" type="update">
 			New filter for run on Registration module and option to save charities per run-year
+			Updated dependency for websearch from 3.1.0 to 3.1.2
 		</action>     
 	</release> 
   	
