@@ -5,6 +5,12 @@
   </properties>
   <body>
     
+  	<release version="3.1.22" date="2007-06-15">
+		<action dev="sigtryggur" type="update">
+			Removed dependency for websearch
+		</action>     
+	</release>
+  	
   	<release version="3.1.21" date="2007-06-08">
 		<action dev="sigtryggur" type="update">
 			New filter for run on Registration module and option to save charities per run-year
