@@ -1,10 +1,17 @@
 <document>
   <properties>
-    <title>eTravel Changes</title>
+    <title>eMarathon Changes</title>
     <author email="gimmi@idega.com">Grimur Jonsson</author>
   </properties>
   <body>
     
+  	<release version="3.1.23" date="2007-06-29">
+		<action dev="sigtryggur" type="update">
+			Misc configuration options added to the Registration module
+			Refactor on localization stuff. Norwegian translations added
+		</action>     
+	</release>
+
   	<release version="3.1.22" date="2007-06-15">
 		<action dev="sigtryggur" type="update">
 			Removed dependency for websearch
