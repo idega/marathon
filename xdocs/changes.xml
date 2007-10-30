@@ -5,6 +5,12 @@
   </properties>
   <body>
     
+	<release version="3.1.27" date="2007-10-30">
+		<action dev="sigtryggur" type="update">
+			New import for groups of marathon runners
+		</action>     
+	</release>
+	
 	<release version="3.1.26" date="2007-08-15">
 		<action dev="sigtryggur" type="update">
 			New code for "my page" modules
