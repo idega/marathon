@@ -5,6 +5,11 @@
   </properties>
   <body>
     
+    <release version="3.1.32" date="2008-01-03">
+		<action dev="civilis" type="update">
+			new eplatform version 3.1.117
+		</action>     
+	</release>
     <release version="3.1.31" date="2008-01-03">
 		<action dev="civilis" type="update">
 			new eplatform version 3.1.116
