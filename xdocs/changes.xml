@@ -5,6 +5,11 @@
   </properties>
   <body>
     
+    <release version="3.1.37" date="2008-01-07">
+		<action dev="civilis" type="update">
+			new marathon version 3.1.28
+		</action>     
+	</release>
     <release version="3.1.36" date="2008-01-04">
 		<action dev="civilis" type="update">
 			new marathon version 3.1.27
