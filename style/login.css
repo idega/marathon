@@ -1,0 +1,146 @@
+/** Login styles **/ 
+
+.logout .currentUser {
+	display: none;
+}
+
+.logout div.username, .logout div.password, .logout a.loginButton {
+	display: none;
+}
+
+.defaultLogin {
+	max-width: 100%;
+}
+
+.defaultLogin {
+width: auto;
+}
+
+.defaultLogin label {
+	width: 160px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #222222;
+	margin: 0;
+	text-align: left;
+}
+
+.defaultLogin input {
+	margin-bottom: 8px;
+}
+
+.defaultLogin div.submit {
+	margin-top: 10px;
+	margin-left: 160px;
+	text-align: left;
+}
+
+.defaultLogin div.submit a {
+	text-decoration: underline;
+	color: #000;
+	background: url(/style/images/button_image.gif) right no-repeat;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	padding-right: 14px;
+}
+
+div#loginBox {
+	position: relative;
+}
+
+div#loginBox div.boxHeader {
+	clear: both;
+	position: relative;
+}
+
+div#loginBox div.boxContentGrey {
+	position: relative;
+}
+
+div#loginBox div.login {
+	float: none;
+	top: 0;
+	left: 0;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+div#loginBox div.login div {
+	clear: both;
+}
+
+div#loginBox div.login label {
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	float: none;
+	text-align: left;
+	width: auto;
+	margin: 0;
+	margin-bottom: 3px;
+	margin-left: 20px;
+}
+
+div#loginBox div.login input {
+	font-size: 10px;
+	width: 140px;
+	margin-left: 20px;
+}
+
+div#loginBox div.login div.password {
+	padding-top: 10px;
+}
+
+div#loginBox div.login div.username {
+	padding-top: 6px;
+}
+
+div#loginBox div.login p.currentUser, div#loginBox div.login p.errorMessage {
+	text-align: center;
+	padding-top: 36px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 12px;
+}
+
+div#loginBox div.submit {
+	position: absolute;
+	top: 94px;
+	right: 11px;
+}
+
+div#loginBox div.submit a {
+	text-decoration: underline;
+	color: #000;
+	background: url(/style/images/button_image.gif) right no-repeat;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	padding-right: 14px;
+}
+
+div#loginBox div.submit a span {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+a.lostPassword {
+	position: absolute;
+	top: 94px;
+	left: 12px;
+	text-decoration: underline;
+	color: #000;
+	background: url(/style/images/button_image.gif) right no-repeat;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	padding-right: 14px;
+}
+
+a.lostPassword:hover {
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/** End Login styles **/

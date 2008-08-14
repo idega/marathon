@@ -1,0 +1,45 @@
+@import "style.css";
+
+a{
+color: #007049;
+}
+
+.article_headline {
+color: #007049 !important;
+}
+
+#selective_section ul .selected{
+background-color: #007049;
+}
+
+#selective_section .text{
+background-color: #007049;
+}
+
+#selective_section ul li a:hover{
+background-color: #007049;
+}
+
+#colHeader2{
+background-color: #007049;
+}
+
+#colHeader3{
+background-color: #007049;
+}
+
+#main_homelink{
+background-color: #007049;
+}
+
+.poll .poll_LinkStyle{
+color: #007049;
+}
+
+#backgroundLine{
+background: url(/style/images/greenBackground.gif) repeat-x;
+}
+
+#borderFixer{
+background: url(/style/images/greenBackground.gif) no-repeat;
+}
