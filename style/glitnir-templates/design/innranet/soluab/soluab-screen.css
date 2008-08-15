@@ -1,0 +1,53 @@
+
+/**/
+
+.panel h2 {
+	border-top : 1px solid #ddd;
+	border-bottom : 1px solid #ddd;
+	background : #F4F4F4;
+	line-height : 1.6;
+	font-size : 1.1em;
+	margin : 1em -10px;
+	padding : 0 10px;
+  _height:1px;min-height:0; /* ie hasLayout fix */
+  background : url(i/sect-head.gif) 0 100% repeat-x;
+}
+
+.panel h2 input {
+  position : absolute;
+  float : left;
+  top : 0;
+  right : 0;
+  margin-left : 10px;
+}
+.panel h2.fi_chk label {
+  padding : 0;
+  margin : 0;
+  display : block;
+	font-size : 1.1em;
+  font-weight : bold;
+  padding-left : 19px;
+}
+
+
+.fi_chk li {
+}
+.fi_chk li {
+  _white-space : nowrap;
+}
+
+#panelBankathjonusta p,
+#panelBankathjonusta .fi_sel,
+#panelBankathjonusta .fi_row,
+#panelFjarmognun fieldset .fi_chk,
+#panelEignastyring fieldset .fi_chk
+{
+	border-bottom : 1px solid #ccc;
+	padding-bottom : 10px;
+	width : 100%;
+}
+
+.fi_row p {
+	padding-top : 1.3em;
+	font-size : .92em;
+}

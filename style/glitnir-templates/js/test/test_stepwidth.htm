@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="is" lang="is">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>stepPageWidth - test</title>
+  <style type="text/css"><!--
+    .stream { position:absolute;right:9999px; }
+
+    body {
+      margin : 0;
+      padding : 10px;
+    }
+
+    ul.box {
+      width : 465px;
+      padding : 5px 0;
+      border : 2px solid #f00;
+      margin : 0;
+      list-style : none;
+      background-color : #eee;
+      overflow : hidden;       /* <-- to clear the float */
+    }
+
+    li {
+      float : left;
+      width : 188px;
+      border : 1px solid #ddd;
+      background-color : #fff;
+      padding : 2px 10px;
+      margin : 5px 10px;
+
+      _display : inline;    /* <-- stupid rendering bug */
+      position : relative;  /* <-- stupid rendering bug */
+    }
+
+
+    body.width1 ul.box {
+      width : 925px;
+      border-color : #0c0;
+    }
+
+  -->
+  </style>
+
+  <script src="../glitnir-utils_1.0-source.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+  <h1>stepPageWidth - test</h1>
+
+
+  <ul class="box">
+    <li>Það er leikur að læra,</li>
+    <li>leikur sá er mér kær,</li>
+    <li>að læra meira og meira,</li>
+    <li>meira í dag en í gær.</li>
+    <li>Bjallan hringir við höldum,</li>
+    <li>heim úr skólanum glöð.</li>
+    <li>Prúð og frjálsleg í fasi,</li>
+    <li>fram nú allir í röð.</li>
+  </ul>
+
+
+
+
+  <script type="text/javascript">//<![CDATA[
+
+    if(typeof(stepPageWidth) != "undefined")
+    {
+      stepPageWidth.init([960]);
+    }
+
+  // ]]></script>
+
+</body>
+</html>

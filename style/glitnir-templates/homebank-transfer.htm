@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="is" xml:lang="is">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>glitnir.is &gt; Netbanki &gt; Greiðslur &gt; Millifæra</title>
+
+  <script src="js/glitnir-utils_1.0.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="design/glitnir/glitnir-screen.css" media="screen, screen" />
+  <link rel="stylesheet" href="design/netbank/netbank-screen.css" media="screen, screen" />
+  <link rel="stylesheet" href="design/netbank/transfer/transfer-screen.css" media="screen, screen" />
+
+</head>
+<body class="width1">
+<div class="twocol pgwrap lang-is">
+
+
+  <div class="pghead">
+  <div class="wrap">
+
+    <div class="brand">
+      <a href="/" title="Glitnir - Upphafssíða" class="logo"><img src="design/glitnir/i/logo.png" alt="Glitnir" /></a>
+      <span class="stream">-</span>
+      <span class="subsite">Netbanki</span>
+    </div>
+    <div class="stream"><a accesskey="2" href="#pgextra2">Beint í leiðakerfi vefsins</a></div>
+
+  </div>
+  </div>
+  <hr class="stream" />
+
+
+
+  <div class="pgmain">
+  <div class="wrap">  
+  <!-- start "pgmain" -->
+
+
+
+    <div class="topbox">
+      <h1 class="boxhead">Greiðslur &gt; Millfæra</h1> 
+      <div class="boxbody">
+
+        <div class="img"><img src="design/netbank/i/groupicons/write.gif" alt="" /></div>
+        <div class="text">
+          <p>Mögulegt er að millifæra inn á eigin reikninga eða reikninga annarra innanlands. Þetta gildir jafnt um reikninga í íslenskum krónum og öðrum gjaldmiðlum.</p>
+          <p>Þú getur valið texta, vistað greiðsluformið til seinni nota, látið framkvæma greiðsluna síðar og sent kvittun fyrir greiðslunni með skýringartexta.</p>
+        </div>
+
+        <div class="help"><a href="/netbankar/hjalp/yfirlit.asp" class="hjalp">Hjálp</a></div>
+      </div>
+    </div>
+
+
+<!-- 
+
+ATH!: Ég tók ekki með falda gjaldeyrisvirkni sem fyrir 
+var á org. síðunni. Þetta er einfaldlega upp á presentational
+value.
+
+-->
+
+
+    <div class="millifaera1 box">
+      <form class="boxbody">
+
+        <div class="attention attn-warning">
+          <p>Warning message</p>
+          <p>Messages may span several paragraphs</p>
+          <ul>
+            <li>and may</li>
+            <li>contain lists</li>
+          </ul>
+          <p>...and <a href="#">links</a> and <strong>text emphasis</strong>.</p>
+        </div>
+
+        <h2>Skref 1 af 3</h2>
+
+        <div class="fieldrow">
+          
+          <div class="fi_sel">
+            <label for="xxx">Úttektarreikningur:</label>
+            <select id="xxx" name="name">
+              <option value="269072|515-26-1234|ISK" selected="selected">Tékkareikningur 515-26-1234</option>
+              <option value="269073|515-14-666999|ISK">Uppleið 515-14-666999</option>
+            </select>
+          </div>
+          
+          <div class="fi_txt">
+            <label for="xxx">Fjárhæð út:</label>
+            <input id="xxx" name="name" value="" type="text" maxlength="12" size="12" />
+            <span class="fi_follow">ISK</span>
+          </div>
+
+        </div>
+        <div class="fieldrow">
+
+          <div class="fi_sel">
+            <label for="xxx">Millifæra á eigin reikning:</label>
+            <select id="xxx" name="name">
+              <option value="0" selected="selected">Enginn reikningur valinn</option>
+              <option value="269072|515-26-1234|ISK">Tékkareikningur 515-26-1234</option>
+              <option value="269073|515-14-666999|ISK">Uppleið 515-14-666999</option>
+            </select>
+          </div>
+
+          <div class="fi_sel">
+            <label for="xxx"><a href="#">Þekktir viðtakendur</a></label>
+            <select id="xxx" name="name">
+              <option selected="selected" value="0">Enginn þekktur viðtakandi valinn</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="fieldrow">
+
+          <div class="fi_txt">
+            <label for="xxx">Banki:</label>
+            <input id="xxx" name="name" value="" type="text" maxlength="4" size="4" />
+          </div>
+
+          <div class="fi_txt">
+            <label for="xxx">Hb:</label>
+            <input id="xxx" name="name" value="" type="text" maxlength="2" size="2" />
+          </div>
+
+          <div class="fi_txt">
+            <label for="xxx">Reikningsnúmer:</label>
+            <input id="xxx" name="name" value="" type="text" maxlength="6" size="12" />
+          </div>
+
+          <div class="fi_txt fi_kt">
+            <label for="xxx">Kennitala:</label>
+            <input id="xxx" name="name" value="" type="text" maxlength="11" size="12" />
+          </div>
+
+        </div>
+
+        <div class="buttonpanel">
+          <div class="fi_btn">
+            <input value="Áfram" type="submit" />
+          </div>
+        </div>
+
+        <h2>Ekki er nauðsynlegt að fylla út svæðin hér fyrir neðan</h2>
+          
+        <div class="fieldrow">
+          
+          <div class="fi_txt">
+            <label for="xxx">Vista upplýsingar undir þekktum viðtakendum:</label>
+            <input id="xxx" name="name" value="" type="text" maxlength="30" size="45" />
+          </div>
+
+          <div class="fi_txt fi_date">
+            <label for="xxx">Greiða þann:</label><!-- (dd.mm.áááá) -->
+            <input id="xxx" name="name" value="" type="text" maxlength="10" size="10" />
+          </div>
+
+        </div>
+        <div class="fieldrow">
+
+          <div class="fi_txt">
+            <label for="xxx">Senda tilkynningu á netfangið:</label>
+            <input id="xxx" name="name" value="" type="text" maxlength="255" size="45" />
+            <small>Hægt er að slá inn fleiri en eitt netfang með því að <br />slá inn bil á milli þeirra.</small>
+          </div>
+
+          <div class="fi_sel">
+            <label for="xxx">Textalykill:</label>
+            <select id="xxx" name="name">
+              <option value="KM">Afnotagj&#246;ld sj&#243;nvarps</option>
+              <option value="KI">Afnotagj&#246;ld St&#246;&#240; 2</option>
+              <option value="AI">Barnag&#230;sla</option>
+              <option value="AG">Bifrei&#240;atryggingar</option>
+              <option value="AH">Bifrei&#240;agj&#246;ld</option>
+              <option value="KP">Bl&#246;&#240; og t&#237;marit</option>
+              <option value="RK">Brunatrygging</option>
+              <option value="RV">Dagvistargj&#246;ld</option>
+              <option value="GP">...</option>
+            </select>
+            <small>Textalykill er notaður til að flokka greiðslur<br /> fyrir bókhald.</small>
+          </div>
+
+        </div>
+        <div class="fieldrow">
+
+          <div class="fi_txt">
+            <label for="xxx">Mín skýring:</label>
+            <input id="xxx" name="name" value="" type="text" maxlength="30" size="45" />
+            <small>Mín skýring er allt að þrjátíu stafa langur texti sem <br />fylgir greiðslunni aðeins hjá glitnir.is og í tilkynningum<br /> um greiðslur.</small>
+          </div>
+
+          <div class="fi_txt">
+            <label for="xxx">Stutt skýring:</label>
+            <input id="xxx" name="name" value="" type="text" maxlength="7" size="10" />
+            <small>Stutt skýring (Tilvísun) er allt að sjö stafa langur <br />texti sem fylgir greiðslunni í bankakerfinu.</small>
+          </div>
+
+        </div>
+        <div class="">
+<!--
+
+BT:
+
+  in the CSS I have used P for vertial and LI for horizontal
+  decicions?
+
+-->
+          <ul class="fi_chk">
+            <h4>Senda kvittun með pósti</h4>
+            <li>
+              <input id="xxxc1" name="name" value="yes" title="" type="checkbox" />
+              <label for="xxxc1">Senda kvittun með pósti til greiðanda.</label>
+            </li>
+            <li>
+              <input id="xxxc2" name="name" value="yes" title="" type="checkbox" />
+              <label for="xxxc2">Senda kvittun með pósti til móttakanda.</label>
+            </li>
+          </ul>
+        
+          <small>Póstkostnaður vegna kvittunar til móttakanda eða greiðanda er samkvæmt <a href="http://www.glitnir.is/verdskra" target="_blank">verðskrá</a> bankans.</small>
+
+        </div>
+
+
+        <div class="footnote">
+
+          <p>Greiðslur sem framkvæmdar eru eftir kl. 21:00 að íslenskum tíma eru afgreiddar 
+          næsta virka bankadag. Komi greiðsludagur upp um helgi eða á frídegi greiðist 
+          fjárhæðin næsta virka bankadag.</p>
+          
+          <p>Greiðslur yfir 10 milljónum króna á reikninga í öðrum bönkum eða sparisjóðum, 
+          sem framkvæmdar eru fyrir kl. 9:00 og eftir kl. 17:00, eru afgreiddar næsta virka 
+          bankadag.</p>
+          
+          <p>Opnunartími gjaldeyrisviðskipta er milli 9:15 og 16:00 virka daga (mánudag - 
+          föstudags).</p>
+
+        </div>
+
+
+      </form>
+
+    </div>
+
+
+  <!-- end "pgmain" -->
+  </div>
+  </div>
+  <hr class="stream" />
+
+
+
+
+  <div class="pgextra1">
+  <div class="wrap">
+  <!-- start "pgextra1" -->
+
+    <div class="rbox">
+      <h2 class="boxhead">Titill Titill</h2>
+      <div class="boxbody">
+        <p>Texti...</p>
+      </div>
+    </div>
+
+  <!-- end "pgextra1" -->
+  </div>
+  </div>
+  <hr class="stream" />
+
+
+
+
+  <div class="pgextra2" id="pgextra2">
+  <div class="wrap">
+  <!-- start "pgextra2" -->
+
+
+    <div class="quserinfo">
+      <div class="greeting">
+        <span>Halló</span>
+        <a href="/netbankar/common/asp/Stillingar">Borgar Þorsteinsson</a>
+        <a href="/netbankar/common/asp/Stillingar">borgarth</a>
+      </div>
+      <div class="logout"><a href="https://www.isb.is/login/logoff.aspx?noCache=35313572006">Hætta</a></div>
+    </div>
+
+
+    <div class="topnav">
+      <h2 class="boxhead">Flýtileiðir</h2>
+      <div class="boxbody">
+        <ul>
+          <li class="mypage selected"><a href="#">Mín síða</a></li>
+          <li class="transfer"><a href="#">Millifæra prufaprufaprufaprufaprufaprufaprufa</a></li>
+          <li class="accounts"><a href="#">Reikningsyfirlit</a></li>
+          <li class="crcards"><a href="#">Kreditkortayfirlit</a></li>
+          <li class="bills"><a href="#">Greiða reikninga</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    
+    <div class="mainnav rbox">
+      <h2 class="boxhead">Netbanki<span class="stream">, aðrar síður</span></h2>
+      <div class="boxbody">
+        <ul>
+          <li><a href="#">Mín síða</a></li>
+          <li class="branch"><a href="#">Yfirlit</a>
+            <ul>
+              <li><a href="#">Reikningar</a></li>
+              <li><a href="#">Kreditkort</a></li>
+              <li><a href="#">Framkvæmdar greiðslur</a></li>
+              <li><a href="#">Greiðslubeiðnir</a></li>
+              <li><a href="#">Greiðsluþjónusta</a></li>
+              <li><a href="#">Vátryggingar</a></li>
+              <li><a href="#">Lán</a></li>
+              <li><a href="#">Netyfirlit</a></li>
+              <li><a href="#">LÍN - Mitt svæði</a></li>
+              <li><a href="#">Skattayfirlit</a></li>
+              <li><a href="#">VSK skil</a></li>
+              <li><a href="#">Skilaboð</a></li>
+              <li class="branch parent"><a href="#">Rafrænar samþykktir</a>
+                <ul>
+                  <li><a href="#">Skilmálar</a></li>
+                  <li><a href="#">Umferðarstofa</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="branch parent "><a href="#">Greiðslur</a>
+            <ul>
+              <li class="selected"><a href="#">Millifæra</a></li>
+              <li><a href="#">AB-gíró</a></li>
+              <li><a href="#">C-gíró</a></li>
+              <li><a href="#">Greiðsluseðill</a></li>
+              <li><a href="#">Ógreiddir reikningar</a></li>
+              <li><a href="#">Beingreiðslur</a></li>
+              <li><a href="#">Þekktir viðtakendur</a></li>
+              <li><a href="#">GSM áfylling</a></li>
+              <li><a href="#">Reglulegar greiðslur</a></li>
+              <li><a href="#">VSK skil</a></li>
+            </ul>
+          </li>
+          <li class="branch"><a href="#">Erlend viðskipti</a>
+            <ul>
+              <li><a href="#">Skoða greiðslur</a></li>
+              <li><a href="#">Skrá greiðslu</a></li>
+              <li><a href="#">Erlendir viðtakendur</a></li>
+              <li><a href="#">Gengi gjaldmiðla</a></li>
+              <li><a href="#">Erlendir reikningar</a></li>
+            </ul>
+          </li>
+          <li class="branch"><a href="#">Verðbréf</a>
+            <ul>
+              <li class="branch"><a href="#">Yfirlit</a>
+                <ul>
+                  <li><a href="#">Verðbréfaeign</a></li>
+                  <li><a href="#">Viðskiptapantanir</a></li>
+                  <li><a href="#">Virkar áskriftir</a></li>
+                  <li><a href="#">Fjárvarsla</a></li>
+                </ul>
+              </li>
+              <li class="branch"><a href="#">Viðskipti</a>
+                <ul>
+                  <li><a href="#">Kaup og sala</a></li>
+                  <li><a href="#">&#193;skrift</a></li>
+                  <li><a href="#">Upplýsingar</a></li>
+                </ul>
+              </li>
+              <li class="branch"><a href="#">Markaður</a>
+                <ul>
+                  <li><a href="#">Yfirlit markaðar</a></li>
+                  <li><a href="#">Kauphöll Íslands</a></li>
+                  <li><a href="#">Sjóðir Glitnis</a></li>
+                  <li><a href="#">Fyrirtækjaaðgerðir</a></li>
+                  <li><a href="#">Vaktin</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Þjónustur</a></li> 
+              <li class="branch"><a href="#">Stillingar</a>
+                <ul>
+                  <li><a href="#">Verðbréfaveðlán</a></li>
+                  <li><a href="#">Bankareikningar</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="branch"><a href="#">Lífeyrir</a>
+            <ul>
+              <li><a href="#">Lífeyrisyfirlit</a></li>
+              <li class="branch"><a href="#">Lífeyrisskilagreinar</a>
+                <ul>
+                  <li><a href="#">Skoða skilagreinar</a></li>
+                  <li><a href="#">Skrá skilagrein</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Lífeyrissjóðslán</a></li>
+              <li><a href="#">Ráðstöfun iðgjalda</a></li>
+            </ul>
+          </li>
+          <li class="branch"><a href="#">Bókhald</a>
+            <ul>
+              <li><a href="#">Útgjaldayfirlit</a></li>
+              <li><a href="#">Sækja nýjan mánuð</a></li>
+              <li><a href="#">Skrá nýja færslu</a></li>
+              <li class="branch"><a href="#">Flokkun</a>
+                <ul>
+                  <li><a href="#">Flokka fyrirtæki</a></li>
+                  <li><a href="#">Stofna nýjan flokk</a></li>
+                  <li><a href="#">Breyta flokki</a></li>
+                  <li><a href="#">Sameina flokka</a></li>
+                  <li><a href="#">Eyða flokki</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="branch"><a href="#">Stillingar</a>
+            <ul>
+              <li><a href="#">Lykilorð</a></li>
+              <li><a href="#">Öryggisnúmer</a></li>
+              <li><a href="#">Auðkenni</a></li>
+              <li class="branch"><a href="#">Reikningar</a>
+                <ul>
+                  <li><a href="#">Heiti og röðun</a></li>
+                  <li><a href="#">Yfirdráttur</a></li>
+                  <li><a href="#">Stofnun reikninga</a></li>
+                  <li><a href="#">Heimsend yfirlit</a></li>
+                </ul>
+              </li>
+              <li class="branch"><a href="#">GSM</a>
+                <ul>
+                  <li><a href="#">SMS númer</a></li>
+                  <li><a href="#">Skráning í símabanka</a></li>
+                  <li><a href="#">GSM greiðsla</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Netfang</a></li>
+              <li><a href="#">Flutningur milli svæða</a></li>
+              <li><a href="#">Greiningarefni</a></li>
+              <li><a href="#">Pöntun yfirlita</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr class="stream" />
+  
+
+
+    <div class="tinyinbox plainnav rbox">
+      <h2 class="boxhead"><a href="/Netbanki.net/yfirlit/skilabod.aspx">7 ólesin skilaboð</a></h2>
+      <div class="boxbody">
+        <ul>
+          <li class="unread type1"><a href="#">Glitnir: Nýtt nafn</a></li>
+          <li class="unread type1"><a href="#">Lokunardagar á bandarísk...</a></li>
+          <li class="unread type2"><a href="#">Er þitt lykilorð öruggt?</a></li>
+          <li class="unread type2"><a href="#">Nýjungar í Netbanka</a></li>
+          <li class="type1"><a href="#">Skilaboð frá Símanum</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+    <div class="pplsearch rbox">
+      <h2 class="boxhead">Þjóðskrá</h2>
+      <form class="boxbody" method="post" action="top.asp?id=600">
+        <input type="hidden"  value="Leita" name="Leit" />
+        <input type="hidden" value="flytival" name="flytileit" id="flytileit" />
+        <div class="fi_txt">
+          <label for="pplsearch_query">Leitarorð</label>
+          <input id="pplsearch_query" type="text" onfocus="this.select();" name="fornafn" value="" title="Þjóðskrárleit" accesskey="l" />
+        </div>
+        <ul class="fi_rdo">
+          <li>
+            <input id="ThjodEin" type="radio" name="tegund" value="E" checked="checked" title="Leita að einstaklingi" />
+            <label for="ThjodEin">Einstaklingar</label>
+          </li>
+          <li>
+            <input id="TjodFyr" type="radio" name="tegund" value="F" title="Leita að fyrirtæki" />
+            <label for="TjodFyr">Fyrirtæki</label>
+          </li>
+        </ul>
+        <div class="fi_img">
+          <input type="image" src="design/netbank/i/icn/s/search.gif" title="Leita í þjóðskrá" alt="Leita í þjóðskrá" value="Leita í þjóðskrá" />
+        </div>
+      </form>
+    </div>
+
+
+
+  <!-- end "pgextra2" -->
+  </div>
+  </div>
+  <hr class="stream" />
+
+  
+
+
+  <div class="pgfoot">
+  <div class="wrap">
+  <!-- start "pgfoot" -->
+
+
+
+
+
+
+
+    <div class="langnav">
+      <h2 class="boxhead">Tungumál</h2>
+      <div class="boxbody">
+        <ul>
+          <li class="is"><a href="#">Íslenska</a></li>
+          <li class="no"><a href="#">Norsk</a></li>
+          <li class="en"><a href="#">English</a></li>
+          <li class="dk"><a href="#">Dansk</a></li>
+          <li class="pl"><a href="#">Polski</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="mainfooter">
+      <h2 class="boxhead">Um Glitni</h2>
+      <div class="boxbody">
+        <strong>Glitnir</strong> <i>|</i>
+        Kt. 5505003530 <i>|</i>
+        Sími: 440 4000 <i>|</i>
+        Fax: 440 4001 <i>|</i>
+        Þjónustuver opið: 8 - 19 <i>|</i>
+        Netfang: <a href="mailto:glitnir@glitnir.is">glitnir@glitnir.is</a> <i>|</i>
+        SWIFT: ISBAISRE
+      </div>
+    </div>
+
+
+    <div class="extranav">
+      <!-- note: this menu needs no "boxhead" element -->
+      <div class="boxbody">
+        <ul>
+          <li class="print"><a href="javascript:print();">Prenta</a></li>
+          <li class="sitemap"><a href="top.asp?id=640">Veftré</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pagedatetime">Miðvikudagur 5. júlí 2006 kl. 13:53</div>
+
+
+  <!-- end "pgfoot" -->
+  </div>
+  </div>
+
+
+
+<!-- end "pgwrap" -->
+</div>
+
+  <script src="js/config.js" type="text/javascript"></script>
+  <script src="js/init.js" type="text/javascript"></script>
+  <script src="js/netbank-init.js" type="text/javascript"></script>
+</body>
+</html>
+

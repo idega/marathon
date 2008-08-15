@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="is" lang="is">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>treeCollapse - test</title>
+
+  <script src="../glitnir-utils_1.0-source.js" type="text/javascript"></script>
+
+  <style type="text/css">
+
+/* hide/show rules for the collapse script */
+.mainnav .closed ul,
+.mainnav .open .closed ul {
+  display : none;
+}
+.mainnav .open ul,
+.mainnav .open .open ul {
+  display : block;
+}
+
+/**/
+.mainnav {
+  width : 15em;
+}
+
+ul {
+  list-style : none;
+  margin-left : 0;
+  padding : 0;
+}
+li {
+  position : relative;
+}
+
+a {
+  font-size : 12px;
+  text-decoration : none;
+  background : #eee;
+  color : #555;
+  display : block;
+  padding : 2px 6px;
+  _height:1px;min-height:0; /* ie hasLayout fix */
+}
+
+ul ul a {     padding-left: 20px;  }
+ul ul ul a {  padding-left: 40px;  }
+
+ul .branch ul a {
+  background : #ddd;
+}
+ul .branch ul ul a {
+  background : #ccc;
+}
+
+/* venjulega værum við að gera svona með myndum :-) */
+
+li.open > a:after {
+  content : '-';
+  padding : 0 6px;
+}
+li.closed > a:after {
+  content : '+';
+  padding : 0 6px;
+}
+
+li.parent>a, li.selected>a {
+  color : #000;
+}
+
+</style>
+
+</head>
+<body>
+
+  <h1>treeCollapse - test</h1>
+
+<!--
+
+  Hvernig á að nota class merkingar:
+
+    "branch":
+    
+    *  Öll LI sem eiga börn fá þessa merkingu.
+  
+    "selected":
+    
+    * Núverandi síða hefur þennan class. Hann á bara að koma einu
+      sinni fyrir í öllu trénu.
+
+    "parent":
+    
+    * Allar LI greinar (ie. "branch") sem eru foreldar núverandi síðu 
+      taka þetta.
+
+-->
+
+    <div class="mainnav">
+      <h2 class="boxhead">Netbanki<span class="stream">, aðrar síður</span></h2>
+      <div class="boxbody">
+        <ul>
+          <li><a href="#">Mín síða</a></li>
+          <li class="branch parent"><a href="#">Yfirlit</a>
+            <ul>
+              <li><a href="#">Reikningar</a></li>
+              <li><a href="#">Kreditkort</a></li>
+              <li><a href="#">Framkvæmdar greiðslur</a></li>
+              <li><a href="#">Greiðslubeiðnir</a></li>
+              <li><a href="#">Greiðsluþjónusta</a></li>
+              <li><a href="#">Vátryggingar</a></li>
+              <li><a href="#">Lán</a></li>
+              <li><a href="#">Netyfirlit</a></li>
+              <li><a href="#">LÍN - Mitt svæði</a></li>
+              <li><a href="#">Skattayfirlit</a></li>
+              <li><a href="#">VSK skil</a></li>
+              <li><a href="#">Skilaboð</a></li>
+              <li class="branch parent"><a href="#">Rafrænar samþykktir</a>
+                <ul>
+                  <li><a href="#">Skilmálar</a></li>
+                  <li class="selected"><a href="#">Umferðarstofa</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="branch"><a href="#">Greiðslur</a>
+            <ul>
+              <li><a href="#">Millifæra</a></li>
+              <li><a href="#">AB-gíró</a></li>
+              <li><a href="#">C-gíró</a></li>
+              <li><a href="#">Greiðsluseðill</a></li>
+              <li><a href="#">Ógreiddir reikningar</a></li>
+              <li><a href="#">Beingreiðslur</a></li>
+              <li><a href="#">Þekktir viðtakendur</a></li>
+              <li><a href="#">GSM áfylling</a></li>
+              <li><a href="#">Reglulegar greiðslur</a></li>
+              <li><a href="#">VSK skil</a></li>
+            </ul>
+          </li>
+          <li class="branch"><a href="#">Erlend viðskipti</a>
+            <ul>
+              <li><a href="#">Skoða greiðslur</a></li>
+              <li><a href="#">Skrá greiðslu</a></li>
+              <li><a href="#">Erlendir viðtakendur</a></li>
+              <li><a href="#">Gengi gjaldmiðla</a></li>
+              <li><a href="#">Erlendir reikningar</a></li>
+            </ul>
+          </li>
+          <li class="branch"><a href="#">Verðbréf</a>
+            <ul>
+              <li class="branch"><a href="#">Yfirlit</a>
+                <ul>
+                  <li><a href="#">Verðbréfaeign</a></li>
+                  <li><a href="#">Viðskiptapantanir</a></li>
+                  <li><a href="#">Virkar áskriftir</a></li>
+                  <li><a href="#">Fjárvarsla</a></li>
+                </ul>
+              </li>
+              <li class="branch"><a href="#">Viðskipti</a>
+                <ul>
+                  <li><a href="#">Kaup og sala</a></li>
+                  <li><a href="#">&#193;skrift</a></li>
+                  <li><a href="#">Upplýsingar</a></li>
+                </ul>
+              </li>
+              <li class="branch"><a href="#">Markaður</a>
+                <ul>
+                  <li><a href="#">Yfirlit markaðar</a></li>
+                  <li><a href="#">Kauphöll Íslands</a></li>
+                  <li><a href="#">Sjóðir Glitnis</a></li>
+                  <li><a href="#">Fyrirtækjaaðgerðir</a></li>
+                  <li><a href="#">Vaktin</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Þjónustur</a></li> 
+              <li class="branch"><a href="#">Stillingar</a>
+                <ul>
+                  <li><a href="#">Verðbréfaveðlán</a></li>
+                  <li><a href="#">Bankareikningar</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="branch"><a href="#">Lífeyrir</a>
+            <ul>
+              <li><a href="#">Lífeyrisyfirlit</a></li>
+              <li class="branch"><a href="#">Lífeyrisskilagreinar</a>
+                <ul>
+                  <li><a href="#">Skoða skilagreinar</a></li>
+                  <li><a href="#">Skrá skilagrein</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Lífeyrissjóðslán</a></li>
+              <li><a href="#">Ráðstöfun iðgjalda</a></li>
+            </ul>
+          </li>
+          <li class="branch"><a href="#">Bókhald</a>
+            <ul>
+              <li><a href="#">Útgjaldayfirlit</a></li>
+              <li><a href="#">Sækja nýjan mánuð</a></li>
+              <li><a href="#">Skrá nýja færslu</a></li>
+              <li class="branch"><a href="#">Flokkun</a>
+                <ul>
+                  <li><a href="#">Flokka fyrirtæki</a></li>
+                  <li><a href="#">Stofna nýjan flokk</a></li>
+                  <li><a href="#">Breyta flokki</a></li>
+                  <li><a href="#">Sameina flokka</a></li>
+                  <li><a href="#">Eyða flokki</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="branch"><a href="#">Stillingar</a>
+            <ul>
+              <li><a href="#">Lykilorð</a></li>
+              <li><a href="#">Öryggisnúmer</a></li>
+              <li><a href="#">Auðkenni</a></li>
+              <li class="branch"><a href="#">Reikningar</a>
+                <ul>
+                  <li><a href="#">Heiti og röðun</a></li>
+                  <li><a href="#">Yfirdráttur</a></li>
+                  <li><a href="#">Stofnun reikninga</a></li>
+                  <li><a href="#">Heimsend yfirlit</a></li>
+                </ul>
+              </li>
+              <li class="branch"><a href="#">GSM</a>
+                <ul>
+                  <li><a href="#">SMS númer</a></li>
+                  <li><a href="#">Skráning í símabanka</a></li>
+                  <li><a href="#">GSM greiðsla</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Netfang</a></li>
+              <li><a href="#">Flutningur milli svæða</a></li>
+              <li><a href="#">Greiningarefni</a></li>
+              <li><a href="#">Pöntun yfirlita</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+
+  <script type="text/javascript">//<![CDATA[
+
+
+if (typeof(treeCollapse) != "undefined") {
+  treeCollapse.init();
+}
+
+
+  // ]]></script>
+
+</body>
+</html>

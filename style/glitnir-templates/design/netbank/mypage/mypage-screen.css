@@ -1,0 +1,52 @@
+.topbox .boxhead {
+  background-image : url(../i/icn/l/lock.gif);
+  padding-left : 35px;
+}
+
+
+
+/* ***  clientinfo / currencies  *** */
+.pgmain .clientinfo,
+.pgmain .currencies {
+  float : left;
+  width : 263px;
+  margin-left : 12px;
+  _display : inline;
+}
+.width1 .pgmain .clientinfo,
+.width1 .pgmain .currencies { width : 358px; }
+
+.pgmain .clientinfo .boxbody,
+.pgmain .currencies .boxbody {
+  padding : 0 10px;
+}
+
+.pgmain .clientinfo table,
+.pgmain .currencies table { width : 263px; }
+.width1 .pgmain .clientinfo table,
+.width1 .pgmain .currencies table { width : 358px; }
+
+/* ** */
+
+.pgmain .currencies {
+  float : right;
+  margin-left : 0;
+  margin-right : 12px;
+}
+.currencies tr.hd th { font-weight : bold; }
+.currencies th { font-weight : normal; }
+
+/* ** */
+
+.pgmain .clientinfo .boxbody {
+  padding-top : 6px;
+  padding-bottom : 12px;
+}
+.clientinfo th,
+.clientinfo td {
+  padding-top : 6px;
+  padding-bottom : 4px;
+}
+
+.clientinfo tr.odd th,
+.clientinfo tr.odd td { background : transparent none; }

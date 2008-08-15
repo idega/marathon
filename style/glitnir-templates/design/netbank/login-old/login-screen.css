@@ -1,0 +1,90 @@
+/* main content (inside top box) */
+
+
+
+.topbox .boxhead { /* add a lock icon to the topbox header */
+  background-image : url(../i/icn/l/lock.gif);
+  padding-left : 35px;
+}
+
+.topbox .boxbody {
+  padding : 25px 260px 7em 10px;
+}
+.width1 .topbox .boxbody {
+  padding-left : 22px;
+  padding-right : 350px;
+}
+
+
+p.descr {
+  font-size : .92em;
+  position : absolute;
+  top : 14.5em;
+  width : 50%;
+}
+.width1 p.descr { width : 50%; }
+
+
+.fi_txt label,
+.fi_sel label {
+  float : left;
+  width : 7em;
+  text-align : right;
+  margin-right : 20px;
+}
+select { width : 160px; }
+.fi_txt input { width : 155px; }
+.fi_btn {
+  width : 255px;
+  text-align : right;
+}
+.width1 .fi_btn {
+  width : 7em;
+  padding-left : 175px;
+}
+
+/* Tip of the day box */
+div.tip {
+  position : absolute;
+  top : 0;
+  right : 0px;
+  width : 230px;
+  border-left : 1px solid #ccc;
+  padding : 15px 15px;
+}
+.width1 div.tip {
+  width : 290px;
+  padding : 15px 35px 15px 25px;
+}
+.tip h3 {
+  margin : 0 0 8px 0;
+  padding : 5px 0 10px 32px;
+  background : url(i/tip.gif) 0 0 no-repeat;
+}
+.tip h4 { margin : 0 0 .7em 0; }
+.tip .fi_chk { margin-top : 1em; }
+
+
+
+
+
+/* ***  aboutnav (Extends .plainnav)  *** */
+.aboutnav .boxhead { background-image : url(../../glitnir/i/rbox/icn/global.png); }
+.aboutnav .boxbody a {
+  padding-left : 30px;
+  background : none 9px 3px no-repeat;
+}
+.aboutnav .apply a    { background-image : url(../i/icn/s/sign.gif); }
+.aboutnav .privacy a  { background-image : url(../i/icn/s/lock.gif); }
+.aboutnav .security a { background-image : url(../i/icn/s/lock.gif); }
+.aboutnav .faq a     { background-image : url(../i/icn/s/faq.gif); }
+.aboutnav .lostpwd a  { background-image : url(../i/icn/s/noentry.gif); }
+
+
+
+
+/* shift .langnav to the right. */
+.wrap .langnav {
+  right : 5px;
+  margin-right : 0;
+}

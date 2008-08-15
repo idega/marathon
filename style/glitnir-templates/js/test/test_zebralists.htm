@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="is" lang="is">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>zebraLists - test</title>
+
+  <script src="../glitnir-utils_1.0-source.js" type="text/javascript"></script>
+
+  <style type="text/css">
+    table.zebra {
+      width : 25em;
+      empty-cells : show;
+    }
+    .zebra th,
+    .zebra td {
+      padding : 3px 10px;
+      text-align : left;
+    }
+    .zebra td {
+      border-left : 1px solid #ccc;
+    }
+    .zebra tr.odd th,
+    .zebra tr.odd td {
+      background-color : #f4f4f4;
+    }
+    .zebra tr.th th {
+      border-bottom : 1px solid #777;
+    }
+    .zebra tr.total th,
+    .zebra tr.total td {
+      border-top : 1px solid #777;
+      background-color : #e9e9e9;
+    }
+    .zebra tr.subtotal th,
+    .zebra tr.subtotal td {
+      border-top : 1px solid #ccc;
+      border-bottom : 1px solid #ccc;
+      background-color : #e9e9e9;
+    }
+    .zebra tr.attr th {
+      padding-left: 30px;
+      font-weight : normal;
+    }
+    .zebra tr.attr th,
+    .zebra tr.attr td {
+      padding-top : 0;
+      font-size : .92em;
+    }
+    
+  </style>
+
+</head>
+<body>
+
+  <h1>zebraLists - test</h1>
+
+  <table class="zebra" cellspacing="0" summary="">
+    <tr class="th">
+      <th></th>
+      <th>Head 2</th>
+      <th>Head 3</th>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+    <tr class="attr">
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+    <tr class="attr">
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+    <tr class="subtotal">
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+    <tr class="attr">
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+    <tr class="total">
+      <th>Name</th>
+      <td>.</td>
+      <td>..</td>
+    </tr>
+  </table>
+  
+
+  <script type="text/javascript">//<![CDATA[
+    if (typeof(zebraLists) != "undefined")
+    {
+      zebraLists.includes = {
+        "table.zebra" : { 
+          items : "tr",
+          subClasses : {
+            "attr" : 1
+          },
+          excludeClasses : {
+            "subtotal" : 1,
+            "total" : 1,
+            "th"    : 1
+          },
+          oddClass : "odd",
+          handle : "zebra"
+        }
+      };
+      zebraLists.init();
+    }
+
+/* // Array.forEach speed-test
+    var arr1a = [
+      1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,
+    ];
+    var arr1b = [
+      1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,
+    ];
+    var arr1c = [
+      1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0,
+    ];
+    var arr2a = [];
+    var arr2b = [];
+    var arr2c = [];
+
+    var s1 = new Date();
+    for (var i = 0, len = arr1a.length; i<len; i++) { arr2a.push(arr1a[i]); }
+    var e1 = new Date();
+
+    var s2 = new Date();
+    Array.forEach(arr1b, function(item) { arr2b.push(item); });
+    var e2 = new Date();
+
+    var s3 = new Date();
+    Array.forEach(arr1c, function(item) { arr2c.push(item); },arr1c);
+    var e3 = new Date();
+
+
+    var msg = "time1 : " + (e1.getTime()-s1.getTime()) + "\n"
+            + "time2 : " + (e2.getTime()-s2.getTime()) + "\n"
+            + "time3 : " + (e3.getTime()-s3.getTime()) + "\n";
+
+    alert(msg);
+*/
+
+  // ]]></script>
+
+</body>
+</html>

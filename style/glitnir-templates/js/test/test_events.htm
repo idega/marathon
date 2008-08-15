@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Event.add/performEvent test</title>
+  <style type="text/css"><!--
+    h4 { margin : 0; }
+  -->
+  </style>
+
+  <script src="../glitnir-utils_1.0-source.js" type="text/javascript"></script>
+
+</head>
+
+
+<body>
+
+  <h1>Event.add/performEvent test</h1>
+
+  <p><a id="link1" href="foo.htm">Link 1</a></p>
+  <p><a id="link2" href="bar.htm">Link 2</a></p>
+  <p><a id="link3" href="smu.htm">Link 3</a></p>
+  <p><a id="link4" href="fle.htm">Link 4</a></p>
+  <p><a id="link5" href="fle.htm">Link 5</a> (deletes events on Link3 and Link4)</p>
+
+  <div id="outputmessage">
+    <h4>Output:</h4>
+  </div>
+
+
+  <script type="text/javascript">//<![CDATA[
+
+    var msgElm = $("outputmessage");
+    var link1  = $("link1");
+    var link2  = $("link2");
+    var link3  = $("link3");
+    var link4  = $("link4");
+    var link5  = $("link5");
+
+    var contextObj1 = { message : "Hello world" };
+    var contextObj2 = { message : "Halló heimur" };
+
+
+    var reportEventType = function(e)
+    {
+      msgElm.innerHTML += this.innerHTML+" : "+e.type+"<br />";
+      return false;
+    };
+
+    var reportMessage = function(e, _prefix)
+    {
+      msgElm.innerHTML += 'Message: "'+this.message + (_prefix || '')+ '"<br />'
+      return false;
+    };
+
+    var doNuthin = function(e) { return false; };
+
+
+    Event.add(link1, "click", reportEventType);
+    Event.add(link2, "click", reportEventType);
+    Event.add(link2, "focus", reportEventType);
+    Event.add(link2, "blur",  reportEventType);
+    Event.add(link1, "click", function(e){
+      link2.onclick(e);
+      return false;
+    });
+
+    Event.add(link3, "click", reportMessage, contextObj1, "!");
+    Event.add(link3, "click", doNuthin);
+    Event.add(link4, "click", doNuthin);
+    Event.add(link4, "click", reportMessage, contextObj2, "#&%");
+    Event.add(link4, "click", reportMessage, contextObj1, "!");
+
+    Event.add(link5, "click", function(){
+      Event.remove(link3, "click", reportMessage, contextObj1);
+      Event.remove(link4, "click", reportMessage, contextObj1);
+      Event.remove(link4, "click", reportMessage, contextObj2);
+      msgElm.innerHTML += "Deleted a bunch of events!<br />";
+      return false;
+    }, window);
+
+/*
+    for (var i=0; i<3000; i++)  // IE memory leak test
+    {
+      var link = DOM.makeElement('<a href="#">link </a>');
+      Event.add(link, "click", reportMessage, contextObj1, "!!!", "fooooo", ["ll", "''"]);
+      DOM.appendChild(link, document.body);
+    }
+*/
+
+
+  // ]]></script>
+
+
+</body>
+</html>

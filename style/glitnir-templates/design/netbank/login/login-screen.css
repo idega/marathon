@@ -1,0 +1,292 @@
+/* main content (inside top box) */
+
+.pgwrap .pgmain .wrap { background : transparent none; }
+
+
+
+/* ***  tip (advert) box  *** */
+.tip {
+  position : relative;
+  background : url(i/tip-bottom.gif) 5px 100% no-repeat;
+  margin-top : -58px;
+  padding : 53px 0 5px 0;
+  overflow : hidden;
+  color : #fff;
+  font-size : 1.09em;
+  _width : 100%;
+}
+
+.tip .boxbody {
+  padding : 10px 248px 0 275px;
+  margin-left : 5px;
+  background : #ba102c url(i/tip-top.gif) 110% 0 no-repeat;
+  min-height : 146px;
+  _height : 146px;
+  _height /**/: 156px;
+}
+.width1 .tip .boxbody {
+  background-position : 100% 0;
+  padding : 23px 263px 0 388px;
+  min-height : 133px;
+  _height : 133px;
+  _height /**/: 156px;
+}
+
+.tip img {
+  position : absolute;
+  bottom : 0;
+  left : -100px;
+}
+.width1 .tip img { left : -0; }
+
+.tip h3 {
+  margin : 0 0 .5em 0;
+  text-transform : uppercase;
+}
+.tip .fi_chk {
+  font-size : .92em;
+  margin-top : 10px;
+  margin-left : -3px;
+}
+
+
+
+
+
+/* ***  loginform  (extends "topbox")  *** */
+.pgmain .loginform {
+  position : absolute;
+  z-index : 1;
+  right : 4px;
+  width : 241px;
+  top : 148px;
+  margin : 0;
+  _display : inline;
+  background : url(i/loginbox.gif) 0 100% no-repeat;
+  padding : 0;
+}
+.width1 .wrap .loginform { right : 18px; }
+
+.wrap .loginform .boxhead {
+  background : url(i/loginbox-head.gif) 0 0 no-repeat;
+  padding : 42px 15px 100px 62px;
+  margin : 0;
+  margin-bottom : -90px;
+}
+.wrap .loginform .boxbody {
+  margin : 0 9px;
+  border : none;
+  background : url(i/loginbox-content.gif) 0 0 no-repeat;
+  padding : 20px;
+  min-height : 200px;
+  _height : 200px;
+}
+.loginform select,
+.loginform .fi_txt input { width : 98%; }
+
+.loginform .fi_btn {
+  margin : .5em 0;
+  text-align : right;
+}
+.loginform .fi_btn input {
+  background : transparent url(i/login-submit.png) 50% 70% no-repeat;
+  font-weight : bold;
+  border : none;
+  width  : 90px;
+  height : 25px;
+}
+.loginform .fi_btn input:hover,
+.loginform .fi_btn input:focus { background-image : url(i/login-submit-over.png); }
+
+
+.loginform .problem { text-align : right; }
+
+.loginform .register {
+  margin : 1.5em -10px .7em -10px;
+  border-top : 1px solid #e8e8e8;
+  padding : 1.5em 10px 10px 10px;
+  position : relative;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+.loginform .register h4 { margin : 0; }
+.loginform .register a {
+  position : relative;
+  margin-top : 15px;
+  display : block;
+  width : 184px;
+  height : 31px;
+  text-align : left;  
+  font-size : 1px;
+  text-indent : -9999em;
+  letter-spacing : -9999em;
+  background : url(i/register-button.png) 0 0 no-repeat;
+  overflow : hidden;
+}
+.loginform .register a:hover,
+.loginform .register a:focus,
+.loginform .register a:active { background-position : 0 -31px; }
+
+
+/* Token-prompt specific */
+.loginform .gettoken {
+  margin : 1.5em -32px -32px -10px;
+  border-top : 1px solid #e8e8e8;
+  padding : 1.5em 32px 80px 10px;
+  position : relative;
+  _height:0;min-height:0;/* ie hasLayout fix */
+  background : url(i/login-token.gif) 100% 100% no-repeat;
+}
+
+
+
+
+
+
+
+/* ***  infobox  *** */
+.infobox {
+  margin-top : 9px;
+  background : url(../../glitnir/i/pgmain-top-1col.png) 50% 0 no-repeat;
+  padding-top : 6px;
+}
+.infobox .boxbody {
+  background : #fff url(../../glitnir/i/pgmain-1col.png) 50% 0 repeat-y;
+  padding-bottom : 15px;
+}
+
+.messagebox {
+  padding : 0 260px 10px 25px;
+}
+.width1 .messagebox {
+  padding : 0 277px 10px 25px;
+}
+
+
+.infobox .boxbody .news,
+.infobox .boxbody .security {
+  float : left;
+  border-right : 1px solid #e8e8e8;
+  padding : 20px 10px 5px 50px;
+  width : 195px;
+  _width /**/: 255px;
+  _display : inline;
+}
+.width1 .infobox .boxbody .news,
+.width1 .infobox .boxbody .security {
+  width : 246px;
+  _width /**/: 330px;
+  padding-right : 20px;
+  padding-left : 64px;
+}
+.infobox .boxbody div h3 {
+  position : relative;
+  margin : 0 0 0 -41px;
+  padding : 7px 0 13px 41px;
+  background : url(i/icn/bulp.png) 0 0 no-repeat;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+.infobox .boxbody div.security {
+  margin-left : -1px;
+  border-right : none;
+  border-left : 1px solid #e8e8e8;
+  padding-left : 50px;
+}
+.width1 .infobox .boxbody div.security { padding-left : 72px; }
+
+.infobox .boxbody div.security h3 { background-image : url(i/icn/shield.png); }
+
+.infobox .boxbody div h4 {
+  margin : 0;
+  padding : 3px 0;
+}
+.infobox .boxbody div p,
+.infobox .boxbody div ul { margin-bottom : 1em; }
+
+.infobox .boxbody div ul {
+  list-style : disc;
+  margin-left : 1.5em;
+}
+.infobox .boxbody div li { margin-bottom : .5em; }
+
+
+
+
+
+/* shift .langnav to the right. */
+.wrap .langnav {
+  right : 5px;
+  margin-right : 0;
+}
+
+
+
+/* attn boxes small version */
+
+.loginform .attention { /* defaults to generic "attn-info" box */
+  position : relative;
+  margin : 1.2em 0 .5em 0;
+  background : #a1cbf0 url(../../glitnir/i/attn/info/fade.gif) 0 0 repeat-x;
+  border : 1px solid #0071d7;
+  padding : 15px 15px 13px 15px;
+  _height:0;min-height:0; /* ie hasLayout fix */
+}
+.loginform .attention .c_tl,
+.loginform .attention .c_tr,
+.loginform .attention .c_br,
+.loginform .attention .c_bl {
+  position : relative;
+  display : block;
+  height : 7px;
+  font-size : 1px;
+  line-height : 0;
+}
+.loginform .attention .c_tr {
+  margin : -16px -16px -7px -16px;
+  background-position : 100% 0;
+}
+.loginform .attention .c_tl {
+  margin : -13px -16px 7px -16px;
+  background-position : 0 0;
+  width : 28px;
+  height : 16px;
+  background : url(i/attn.gif) 0 0 no-repeat;
+}
+.loginform .attention .c_br {
+  background-position : 100% 100%;
+  margin : 0 -16px -14px -16px;
+  padding-top : 7px;
+  z-index : 1;
+}
+.loginform .attention .c_bl {
+  background-position : 0 100%;
+  margin : 0 0 -14px -16px;
+  padding-top : 7px;
+  width : 7px;
+  z-index : 2;
+}
+.loginform .attn-warning .c_tl {
+  background : url(i/attn.gif) 0 -150px no-repeat;
+}
+.loginform .attn-error .c_tl {
+  background : url(i/attn.gif) 0 -100px no-repeat;
+}
+.loginform .attn-success .c_tl {
+  background : url(i/attn.gif) 0 -50px no-repeat;
+}
+
+.loginform .attn-warning { /* Extends .attention */
+  border-color : #a67405;
+  background-color : #fff5a1;
+  background-image : url(../../glitnir/i/attn/warning/fade.gif);
+}
+.loginform .attn-error { /* Extends .attention */
+  border-color : #ff2a00;
+  background-color : #ffae9e;
+  background-image : url(../../glitnir/i/attn/error/fade.gif);
+}
+.loginform .attn-success { /* Extends .attention */
+  border-color : #9b8;
+  background-color : #d2e3a3;
+  background-image : url(../../glitnir/i/attn/success/fade.gif);
+}
+

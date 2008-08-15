@@ -1,0 +1,68 @@
+
+
+.kontakt .boxbody {
+  padding : 0;
+}
+
+.kontakt .collapse-closed .pane {
+  display : none;
+}
+
+.kontakt .collapse-closed h3 a,
+.kontakt .collapse-open h3 a {
+  background :  url(i/collapsearrow.gif) 8px 6px no-repeat;
+  display : block;
+  padding : 4px 10px 6px 18px;
+  margin-top : -1px;
+  text-decoration : none;
+}
+.kontakt .collapse-open h3 a {
+  background-position : 8px -34px;
+}
+.kontakt .collapse-closed h3,
+.kontakt .collapse-open h3 {
+  display : block;
+  padding : 0;
+  margin-top : -1px;
+}
+
+.kontakt .pane {
+  border-top : 1px solid #ccc;
+  padding : 10px;
+  background : #f8f8f8;
+}
+
+.kontakt p,
+.kontakt label {
+  display : block;
+  font-size : 1em;
+  margin : 0;
+}
+.kontakt h3 {
+  display : block;
+  font-size : 1em;
+  border-top : 1px solid #ccc;
+  padding:4px 10px 4px 10px;
+  margin : 0;
+  margin-top : -1px;
+}
+
+
+.kontakt fieldset {
+  border : 0;
+  padding : 0;
+  margin : 0;
+}
+.kontakt .fi_txt input,
+.kontakt textarea {
+  border : 1px solid #ccc;
+  width : 98.5%;
+}
+.kontakt .fi_btn {
+  text-align : right;
+}
+
+.kontakt acronym.req {
+  color : #c00;
+  font-weight : bold;
+}

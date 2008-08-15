@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="is" lang="is">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>.</title>
+  <link rel="stylesheet" type="text/css" media="screen, screen" href="style.css" />
+
+  <script src="../glitnir-utils_1.0-source.js" type="text/javascript"></script>
+  
+<style type="text/css">
+  h4 {
+    margin-bottom : 0;
+  }
+  table {
+    border : 1px solid #555;
+    padding : 4px;
+    border-spacing : 0px;
+  }
+  table th,
+  table td {
+    vertical-align : top;
+    text-align : left;
+    padding : 2px 4px;
+  }
+  table th { background : #ddf; }
+  table td { background : #f4f4f4; }
+  table td em { font-style : normal; color : #aaa; }
+</style>
+</head>
+<body>
+<script type="text/javascript">
+
+function echo(str, wrap) {
+  if (!!wrap) { str = "<"+wrap+">"+str+"</"+wrap+">" }
+  document.write( str + "\n" );
+}
+
+
+function test(func, values) 
+{
+  echo("<table>");
+  echo("<th>in</th><th>out</th>", 'tr');
+  for (var i=0; i<values.length; i++)
+  {
+    echo("<tr>");
+    var _in = values[i];
+    var _out = func(values[i]);
+    echo( _in  + " <em>(" + typeof(_in)  + ")</em>", 'td');
+    echo( _out + " <em>(" + typeof(_out) + ")</em>", 'td');
+    echo("</tr>");
+  }
+  echo("</table>");
+}
+
+
+echo( "formatting.stringToNumber()", 'h4');
+test( formatting.stringToNumber, 
+    ["-1.234.567.890,12314", "100.890,000012314", "1234567890,12314", "000567890", "1.234.567.890"])
+
+echo( "formatting.numberToString()", 'h4');
+test( formatting.numberToString, 
+    [-1234567890.12314, 100890.000012314, 1234567890.12314, 000567890, 1234567890])
+
+echo( "formatting.stripNonNumeric()", 'h4');
+test( formatting.stripNonNumeric, 
+    ["-1.234.567.890,12314", "100.890,000012314", "abcdef", "000567890", "1a2b3c4d5e6f7g8h9i0j"])
+
+
+
+</script>
+
+
+
+
+</pre>
+</body>
+</html>

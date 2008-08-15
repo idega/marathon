@@ -1,0 +1,73 @@
+
+
+/* ***  birthdays  *** */
+
+.birthdays .boxbody {
+  padding : 0;
+}
+.birthdays .boxbody li {
+  padding : 4px 0px;
+  border-bottom : 1px solid #eee;
+}
+.birthdays .boxbody li a,
+.birthdays .boxbody li span {
+  padding : 0px 10px;
+  display : block;
+}
+
+
+
+/* ***  dinermenu  *** */
+
+.dinermenu .boxbody ul {
+  overflow : hidden;
+  margin-bottom : -.9em;
+}
+.dinermenu .boxbody li {
+  margin-bottom : .5em;
+  border-bottom : 1px solid #ddd;
+}
+
+
+
+
+/* *** currencycalc *** */
+
+.currencycalc .boxbody {
+  padding : 0;
+}
+.currencycalc .boxbody table {
+  width : 100%;
+}
+.currencycalc .boxbody table td {
+  padding : 2px 8px;
+  vertical-align : middle;
+}
+.currencycalc .boxbody table th {
+  padding : 2px 8px;
+}
+.currencycalc .boxbody table input {
+  border : 1px solid #ddd;
+  width : 100px;
+  text-align : right;
+}
+.currencycalc .boxbody table img {
+  width : 14px;
+  height : 14px;
+}
+.currencycalc td acronym {
+  padding-left : 16px;
+  background : url(../i/flags14.png) 0 0 no-repeat;
+}
+.currencycalc .isk { background-position : 0 0; }
+.currencycalc .nok { background-position : 0 -40px; }
+.currencycalc .gbp { background-position : 0 -80px; }
+.currencycalc .usd { background-position : 0 -120px; }
+.currencycalc .dkk { background-position : 0 -160px; }
+.currencycalc .sek { background-position : 0 -200px; }
+.currencycalc .cad { background-position : 0 -240px; }
+.currencycalc .lux { background-position : 0 -440px; }
+.currencycalc .ch  { background-position : 0 -400px; }
+.currencycalc .chf { background-position : 0 -280px; }
+.currencycalc .jpy { background-position : 0 -320px; }
+.currencycalc .eur { background-position : 0 -360px; }

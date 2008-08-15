@@ -1,0 +1,889 @@
+/* **********************************************************
+***   Basic Layout Rules                                  ***
+*********************************************************** */
+
+html { filter: expression(document.execCommand("BackgroundImageCache", false, true)); } /* fixes the image flicker bug in IE */
+html, body { height : 100%; }
+
+body {
+  margin : 0;
+  padding : 0 10px 32px 10px;
+  line-height : 1.2;
+  font-family : Arial, Helvetica, sans-serif;
+  background : #E2E7EB url(i/bgFrame.jpg) 50% 0 repeat-x;
+  color : #000;
+  text-align : center;
+}
+
+body,
+body.zoom1 { font-size : 11px;  _font-size :  68.75%; }
+body.zoom2 { font-size : 14px;  _font-size :  87.50%; }
+body.zoom3 { font-size : 17px;  _font-size : 106.25%; }
+
+.pgwrap {
+  position : relative;
+  padding-top : 32px;
+  margin : 0 auto;
+  text-align : left;
+  width : 760px;
+}
+.width1 .pgwrap { width : 960px; }
+
+
+
+
+
+
+/* ***  Page header / Branding / Etc.  *** */
+.pghead {
+  background : url(i/bgHeader.png) -30px 0 no-repeat;
+  margin-bottom : 14px;
+}
+.width1 .pghead { background-position : 0 0; }
+
+.pghead .wrap {
+  height : 94px;
+  position : relative;
+}
+.pghead .brand span { position:absolute;right:9999px;left:auto; }
+.pghead .logo img { margin : 26px 10px 16px 5px; }
+.width1 .pghead .logo img { margin-left : 10px; }
+
+
+
+
+/* ***  pgmain (Main Content)  *** */
+.pgmain {
+  margin-left : 190px;
+  width : 570px;
+  float : left;
+  background : url(i/pgmain-bottom.png) 50% 100% no-repeat;
+  padding-bottom : 6px;
+  _display : inline;
+  margin-bottom : 8px;
+}
+.width1 .pgmain { width : 770px; }
+
+.pgmain .wrap {
+  padding : 1px 0;
+  background : #fff url(i/pgmain.png) 50% 100% repeat-y;
+  margin-right : -300px;
+  width : 100%;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+.pgmain .wrap:after { display:block; clear:both; content:"."; visibility:hidden; font-size:1px; height:1px; margin-top:-1px; }
+
+.threecol .pgmain {
+  width : 360px;
+  margin-right : 210px;
+  background-image : url(i/pgmain-bottom-3col.png);
+}
+.width1 .threecol .pgmain { width : 560px; }
+.threecol .pgmain .wrap { background-image : url(i/pgmain-3col.png); }
+
+.onecol .pgmain {
+  width : 760px;
+  margin-left : 0;
+  margin-right : 0;
+  background-image : url(i/pgmain-bottom-1col.png);
+}
+.width1 .onecol .pgmain { width : 960px; }
+.onecol .pgmain .wrap { background-image : url(i/pgmain-1col.png); }
+
+
+
+
+
+
+/* ***  pgextra1 (Right Column)  *** */
+.pgextra1 {
+  float : left;
+  width : 210px;
+  margin : -6px -200px 0 -210px;
+  _display : inline;
+  padding-top : 68px;
+  background : url(i/topbox.png) 100% 0 no-repeat;
+}
+.pgextra1 .wrap {
+  padding-top : 3.09em;
+  padding-left : 8px;
+  background : url(i/pe1-top.gif) 0 2.3em repeat-x;
+  _background-position : 0 2.4em;
+}
+.twocol .pgextra1 { display : none; }
+
+
+
+
+
+/* ***  pgextra2 (Left Column)  *** */
+.pgextra2 {
+  float : left;
+  width : 182px;
+  margin : -6px -200px 0 -760px;
+  _display : inline;
+}
+.width1 .pgextra2 { margin-left : -960px; }
+
+
+
+
+
+
+/* ***  pgfoot (Footer + extra widgets)  *** */
+.pgfoot {
+  clear : both;
+  margin-left : -8px;
+}
+.pgfoot .wrap {
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+
+
+
+
+
+
+/* **********************************************************
+***   Basic Style Rules                                   ***
+*********************************************************** */
+.stream { position:absolute;right:9999px; }
+.print  { display : none; }
+
+
+div, table, caption { font-size : 1em; }
+
+blockquote {
+  margin : 0 3em 0 2em;
+  padding : .3em .5em;
+}
+q:after, q:before { content : ""; }
+
+
+p, blockquote, ul, ol, dl, table {
+  margin-top : 0px;
+  margin-bottom : .7em;
+}
+ul {
+  list-style : none;
+  padding : 0;
+  margin : 0;
+}
+ol { padding-left : 3em; }
+ul, ol  { margin-left : 0; }
+li { margin : 0; padding : 0; }
+
+.article ul {
+  list-style : disc;
+  padding-left : 2.5em;
+  margin-bottom : .7em;
+}
+.article li { margin-bottom : .54em; }
+
+
+
+a {
+  color : #BA102C;
+  text-decoration : underline;
+}
+div.pgwrap a:hover,
+div.pgwrap a:focus,
+div.pgwrap a:active {
+  text-decoration : underline;
+  color : #e12;
+}
+
+
+
+acronym {
+  cursor : help;
+  border : none;
+}
+acronym:hover { border-bottom : 1px dotted #ddd; }
+
+
+img {
+  margin : 0;
+  padding : 0;
+  border : none; 
+  vertical-align : middle;
+}
+
+
+h1, h2, h3, h4 {
+  margin-top : 0;
+  margin-bottom : 0;
+}
+h1 {
+  font-size : 1.27em;
+  margin-bottom : .55em;
+}
+h2 {
+  font-size : 1.27em;
+  margin-top : 1.57em;
+  margin-bottom : .55em;
+}
+h3 {
+  font-size : 1.09em;
+  margin-top : 1em;
+  margin-bottom : .64em;
+}
+h4 {
+  font-size : 1em;
+  margin-bottom : .2em;
+}
+
+
+
+
+table { border-collapse : collapse; }
+table, td, th, caption {
+  border : none;
+  background-color : transparent;
+  padding : 0;
+  text-align : left;
+  vertical-align : top;
+}
+th,
+td {
+  padding : 3px 3px 4px 10px;
+}
+
+th acronym:hover { border : none; }
+
+th.c,
+td.c {
+  text-align : center;
+  padding-right : 5px;
+  padding-left : 5px;
+}
+th.r,
+td.r {
+  text-align : right;
+  padding-right : 10px;
+  padding-left : 3px;
+}
+
+th.num, td.num {
+  text-align : right;
+  white-space : nowrap; 
+  padding-right : 10px;
+  padding-left : 3px;
+}
+td input.num {
+  text-align : right;
+}
+td input {
+  padding : 0;
+  border-width : 1px;
+}
+
+tr.hd th { padding-top : 5px; }
+
+tr.odd th,  /* zebra stripes */
+tr.odd td { background-color : #F2F2F2; }
+
+tr.total th,
+tr.total td {
+  padding-top : 5px;
+  padding-bottom : 3px;
+  border-top : 1px solid #ccc;
+  background-color : #ededed;
+}
+
+
+/* expandable table */
+
+tr.subrow td {
+  border-bottom : 1px solid red;
+  padding-bottom : 8px;
+}
+tr h3 {
+  border-bottom : 1px solid #ccc;
+  clear : both;
+  padding-top : 4px;
+  margin : 0 0 4px 0;
+  font-size : 1em;
+}
+tr.subrow .set {
+  float : left;
+  width : 49%;
+  margin : 0 0 2px 0;
+}
+tr.subrow .set b {
+  width : 49%;
+  float : left;
+  display : block;
+  font-weight : normal;
+}
+
+
+
+
+/* **********************************************************
+***   "Standardized" Forms                                ***
+*********************************************************** */
+form { margin : 0; }
+
+input,
+select,
+textarea {
+  vertical-align : middle;
+  font-family : Arial, Helvetica, sans-serif;
+  font-size : 1em;
+}
+
+textarea,
+.fi_txt input { cursor : text; }
+
+.fi_btn input,
+.fi_img input { cursor : pointer; }
+
+
+label { vertical-align : middle; }
+
+.fi_txt,
+.fi_sel,
+.fi_bdy,
+.fi_btn,
+.fi_img,
+.fi_file {
+  _height:0;min-height:0;/* ie hasLayout fix */
+  padding-bottom : .5em;
+}
+
+div.fi_rdo,
+div.fi_chk,
+.fi_rdo li,
+.fi_chk li { _height:0;min-height:0;/* ie hasLayout fix */ }
+
+
+
+
+
+
+
+
+
+
+/* **********************************************************
+***   Commonly Occurring Content "Boxes"                  ***
+*********************************************************** */
+
+.boxhead {
+  margin : 0;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+.boxbody { _height:0;min-height:0;/* ie hasLayout fix */ }  /* by default clear all floats inside *all* .boxbody elements */
+.boxbody:after { display:block; clear:both; content:"."; visibility:hidden; font-size:1px; height:1px; margin-top:-1px; }
+
+
+
+
+/* ***  rbox (Standard rounded-corner boxes)  *** */
+.rbox .c_tl,
+.rbox .c_tr,
+.rbox .c_br,
+.rbox .c_bl {
+  position : relative;
+  display : block;
+  height : 6px;
+  font-size : 1px;
+  line-height : 0;
+  background : url(i/rbox/corners.gif) 0 0 no-repeat;
+}
+.rbox .c_tr {
+  margin : -6px -1px -1px 5px;
+  background-position : 100% 0;
+}
+.rbox .c_tl {
+  margin : -6px 0 -1px -1px;
+  background-position : 0 0;
+  width : 6px;
+}
+.rbox .c_br {
+  margin : -1px -1px -6px 5px;
+  background-position : 100% 100%;
+  z-index : 1;
+}
+.rbox .c_bl {
+  margin : -1px 0 -6px -1px;
+  background-position : 0 100%;
+  width : 6px;
+  z-index : 1;
+}
+
+
+.rbox {
+  position : relative;
+  padding-top : 5px;  /* make it look nice by default w/o Javascript */
+  border : 1px solid #c9d0d4;
+  background : url(i/rbox/head.gif) 0 0 repeat-x;
+  margin-bottom : 18px;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+.rbox-active { padding-top : 0; top : 5px; } /* nice-ify when Javascript *is* running */
+
+.rbox .boxhead {
+  position : relative;
+  top : auto; left : auto; right : auto; bottom : auto;
+  margin : -9px 0 0 0;
+  border : none;
+  border-bottom : 1px solid #c8d0d3;
+  font-weight : bold;
+  font-size : 1em;
+  padding : 11px 31px 9px 9px;
+  background : transparent none 100.5% 0 no-repeat;
+}
+.rbox .boxhead a {
+  display : block;
+  position : relative;
+  margin : -11px -32px -9px -9px;
+  padding : 11px 32px 9px 9px;
+  text-decoration : none;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+.rbox .boxbody {
+  margin : 0;
+  background : #fff;
+  padding : 10px 10px 4px 10px;
+}
+  
+
+
+
+
+/* ***  footbox (Standard boxes for the footer)  *** */
+.footbox {
+  float : left;
+  width : 182px;
+  margin-left : 8px;
+  _display : inline;
+}
+.width1 .footbox { width : 232px; }
+
+.footbox .boxbody {
+  padding : 10px 8px;
+  min-height : 8em;
+  _height : 8em;
+}
+.width1 .footbox .boxbody { padding : 10px 10px; }
+
+
+
+
+
+/* ***  topbox (Page title + content/introduction)  *** */
+.topbox {
+  position : relative;
+  margin-top : -7px;
+  background : url(i/topbox.png) 50% 0 no-repeat;
+  padding-top : 57px;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+.width1 .topbox { background-position : 0 0; }
+
+.topbox .boxhead {
+  padding-top : 1px; /* hack : otherwise the text wraps in Opera 8.54  when the span.shadow appears */
+  margin : -1px 0 11px 16px;
+  font-size : 2em;
+  color : #000;
+  background-position : 0 50%;
+  background-repeat : no-repeat;
+ /*  *** use this code to add an icon to a topbox ***
+  background-image : url(../i/icn/l/lock.gif);
+  padding-left : 35px;
+ */
+}
+.topbox .boxhead span.shadow {  /* a silly shadow element that gets dynamically added to the dom via Javascript. */
+  display : block;
+  margin-bottom : -1.25em;
+  margin-left : 1px;
+  color : #fff;
+}
+.topbox .boxbody {
+  background-color : #fff;
+  border-left : 1px solid #c9d0d4;
+  border-right : 1px solid #c9d0d4;
+  padding : 6px 11px 1em 11px;
+}
+
+
+
+
+
+
+
+
+/* **********************************************************
+***   Common page modules/menus/etc.                      ***
+*********************************************************** */
+
+
+/* ***  topnav (Header navigation)  *** */
+.topnav {
+  position : absolute;
+  top : 54px;
+  left : 185px;
+}
+.width1 .topnav { left : 226px; }
+
+.topnav .boxhead { position:absolute;right:9999px; }
+.topnav .boxbody {
+  width : 100%;
+  _height:0;min-height:0;/* ie hasLayout fix */
+  overflow : hidden;
+}
+.topnav li {
+  float : left; 
+  width : 100px;
+}
+.topnav .boxbody a {
+  display : block;
+  color : #fff;
+  width : 100%;
+  height : 0;
+  padding-top : 72px;
+  overflow : hidden;
+  background : transparent none 0 0 no-repeat;
+}
+.topnav .selected a,
+.topnav .boxbody a:hover,
+.topnav .boxbody a:focus,
+.topnav .boxbody a:active { background-position : 0 -72px; }
+
+
+
+
+
+
+
+
+
+/* ***  breadcrumbs (username, logout)  *** */
+.breadcrumbs {
+  position : absolute;
+  left : 205px;
+  padding-top : 14px; /* 9 + 5 */
+  margin-top : -.6em;
+  width : 400px;
+}
+.breadcrumbs strong { font-weight : normal; }
+
+
+
+
+
+
+/* ***  mainnav (Main left-hand side navigation)  *** */
+.mainnav .boxhead { background-image : url(i/rbox/icn/global.png); }
+.mainnav .boxbody { padding : 0; }
+.mainnav ul {
+  overflow : hidden;
+  width : 100%;
+}
+.mainnav li {
+  position : relative;
+  margin : -1px 0 1px 0;
+  border-top : 1px solid #c9d0d4;
+  background : none 0 0 no-repeat;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+.mainnav .boxbody a {
+  display : block;
+  padding : 7px 9px;
+  background : none 0 100% no-repeat;
+  text-decoration : none;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+.mainnav .boxbody a:hover,
+.mainnav .boxbody a:focus,
+.mainnav .boxbody a:active { text-decoration : underline; }
+
+.mainnav li.parent,
+.mainnav li.selected {
+  background-image : url(i/mainnav/sel1a.png);
+  background-color : #ba102c;
+  border-bottom : 1px solid #c9d0d4;
+  margin-bottom : 0;
+}
+.mainnav li.parent a,
+.mainnav li.selected a {
+  background-image : url(i/mainnav/sel1b.png);
+  color : #fff;
+}
+
+
+/* second level */
+.mainnav ul ul {
+  border-top : 1px solid #c9d0d4;
+  background-color : #f5eff0;
+  padding-bottom : 5px;
+  border-bottom : 1px solid #c9d0d4;
+  margin-bottom : -1px;
+}
+.mainnav .boxbody ul ul li {
+  border-top : none;
+  border-bottom : none;
+  margin-bottom : 1px;
+}
+.mainnav .boxbody ul ul a {
+  padding-left : 24px;
+  color : #BA102C;
+  background-image : none;
+}
+.mainnav .boxbody ul ul a:hover,
+.mainnav .boxbody ul ul a:focus,
+.mainnav .boxbody ul ul a:active { color : #e12; }
+
+.mainnav ul ul li.open,
+.mainnav ul ul li.parent,
+.mainnav ul ul li.selected {
+  border-top : 1px solid #c9d0d4;
+  background-image : url(i/mainnav/sel2a.png);
+  background-color : #c4c5c6;
+  border-bottom : 1px solid #c9d0d4;
+  margin-bottom : 0;
+}
+.mainnav ul ul li.open a,
+.mainnav ul ul li.parent a,
+.mainnav ul ul li.selected a {
+  background-image : url(i/mainnav/sel2b.png);
+  color : #000;
+}
+
+
+
+/* third level */
+.mainnav ul ul ul {
+  background-color : #fff;
+  padding-bottom : 2px;
+}
+.mainnav .boxbody ul ul ul li {
+  border-top : 1px dashed #c9d0d4;
+  background-image : url(i/mainnav/bullet3.gif);
+}
+.mainnav .boxbody ul ul ul a {
+  padding-left : 40px;
+  color : #BA102C;
+  background-image : none;
+}
+.mainnav ul ul ul li.open,
+.mainnav ul ul ul li.parent,
+.mainnav ul ul ul li.selected {
+  border-top : 1px solid #c9d0d4;
+  background-image : url(i/mainnav/sel3a.png);
+  background-color : #d9d9d9;
+  margin-bottom : 0;
+}
+.mainnav ul ul ul li.open a,
+.mainnav ul ul ul li.parent a,
+.mainnav ul ul ul li.selected a {
+  background-image : url(i/mainnav/sel3b.png);
+  color : #000;
+}
+
+
+/* Has-Child-Categories icon */
+.mainnav ul ul li.branch i {
+  width : 15px;
+  height : 15px;
+  left : 155px;
+  top : .6em;
+  background : url(i/mainnav/arrow.gif) 0 0;
+  margin-top : 0;
+}
+
+/* Parent-Open arrow */
+.mainnav li.parent i,
+.mainnav li.selected i,
+.mainnav ul ul li.parent i,
+.mainnav ul ul li.selected i {
+  position : absolute;
+  z-index : 1;
+  display : block;
+  width : 100%;
+  left : 0;
+  top : auto;
+  height : 9px;
+  background : url(i/mainnav/sel1c.png) 0 0 no-repeat;
+  margin-top : -2px;
+}
+.mainnav ul ul li.parent i,
+.mainnav ul ul li.selected i { background-image : url(i/mainnav/sel2c.png); }
+
+
+/* hide all submenus by default - except the active ones */
+/*
+.mainnav ul ul { display : none; }
+.mainnav ul .parent ul,
+.mainnav ul .selected ul { display : block; }
+.mainnav ul .parent ul ul,
+.mainnav ul .selected ul ul { display : none; }
+.mainnav ul ul .parent ul,
+.mainnav ul ul .selected ul { display : block; }
+*/
+
+
+
+/* ***  plainnav (simple links menu for the side-columns)  *** */
+/* Extends .rbox */
+.plainnav .boxbody { padding : 0; }
+.plainnav .boxbody li { _height:0;min-height:0;/* ie hasLayout fix */ }
+.plainnav .boxbody a {
+  position : relative;
+  display : block;
+  padding : 5px 10px 6px 10px;
+  border-top : 1px solid #c9d0d4;
+  margin : -1px 0 1px 0; 
+  text-decoration : none;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+
+
+/* ***  promo (simple ad-banner in the side-columns)  *** */
+.promo {
+  margin-bottom : 8px;
+}
+
+
+/* ***  mainfooter (copyright and contact info, etc.)  *** */
+.mainfooter {
+  clear : both;
+  text-align : center;
+  background : url(i/pgmain-top-1col.png) 50% 0 no-repeat;
+  margin-left: 8px;
+  padding-top : 6px;
+}
+.threecol .mainfooter {
+  margin-right : 210px;
+  background-image : url(i/pgfoot-top.png);
+}
+.mainfooter .boxhead { position:absolute;right:9999px; }
+
+.mainfooter .boxbody {
+  background : #fff url(i/pgmain-bottom-1col.png) 50% 100% no-repeat;
+  padding : 0 6px 7px 6px;
+}
+.threecol .mainfooter .boxbody { background-image : url(i/pgfoot-bottom.png); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ***  Attention boxes: info (default) - warning - error - success  *** */
+
+.Attention,
+.Error,
+.Info,
+.attention { /* defaults to generic "attn-info" box */
+  position : relative;
+  margin : 1.2em 0 .5em 0;
+  background : #a1cbf0 url(i/attn/info/bak.gif) 0 0 no-repeat;
+  border : 1px solid #0071d7;
+  padding : 15px 15px 13px 50px;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+.attention ul {
+  padding-left : 1.5em;
+  margin-bottom : .7em;
+  list-style : disc;
+}
+
+.Attention .c_tl, .Attention .c_tr, .Attention .c_br, .Attention .c_bl,
+.Error .c_tl, .Error .c_tr, .Error .c_br, .Error .c_bl,
+.Info .c_tl, .Info .c_tr, .Info .c_br, .Info .c_bl,
+.attention .c_tl,
+.attention .c_tr,
+.attention .c_br,
+.attention .c_bl {
+  position : relative;
+  display : block;
+  height : 7px;
+  font-size : 1px;
+  line-height : 0;
+  background : url(i/attn/info/corners.gif) 0 0 no-repeat;
+}
+.Attention .c_tr,
+.Error .c_tr,
+.Info .c_tr,
+.attention .c_tr {
+  margin : -16px -16px 9px -45px;
+  background-position : 100% 0;
+}
+.Attention .c_tl,
+.Error .c_tl,
+.Info .c_tl,
+.attention .c_tl {
+  margin : -16px 0 9px -51px;
+  background-position : 0 0;
+  width : 7px;
+}
+.Attention .c_br,
+.Error .c_br,
+.Info .c_br,
+.attention .c_br {
+  background-position : 100% 100%;
+  margin : 0 -16px -14px -45px;
+  padding-top : 7px;
+  z-index : 1;
+}
+.Attention .c_bl,
+.Error .c_bl,
+.Info .c_bl,
+.attention .c_bl {
+  background-position : 0 100%;
+  margin : 0 0 -14px -51px;
+  padding-top : 7px;
+  width : 7px;
+  z-index : 1;
+}
+
+.Attention,
+.attn-warning { /* Extends .attention */
+  border-color : #a67405;
+  background-color : #fff5a1;
+  background-image : url(i/attn/warning/bak.gif);
+ }
+.Attention .c_tr,
+.Attention .c_tl,
+.Attention .c_br,
+.Attention .c_bl,
+.attn-warning .c_tr,
+.attn-warning .c_tl,
+.attn-warning .c_br,
+.attn-warning .c_bl { background-image : url(i/attn/warning/corners.gif); }
+
+.Error,
+.attn-error { /* Extends .attention */
+  border-color : #ff2a00;
+  background-color : #ffae9e;
+  background-image : url(i/attn/error/bak.gif);
+}
+.Error .c_tr,
+.Error .c_tl,
+.Error .c_br,
+.Error .c_bl,
+.attn-error .c_tr,
+.attn-error .c_tl,
+.attn-error .c_br,
+.attn-error .c_bl { background-image : url(i/attn/error/corners.gif); }
+
+.attn-success { /* Extends .attention */
+  border-color : #9b8;
+  background-color : #d2e3a3;
+  background-image : url(i/attn/success/bak.gif);
+}
+.attn-success .c_tr,
+.attn-success .c_tl,
+.attn-success .c_br,
+.attn-success .c_bl { background-image : url(i/attn/success/corners.gif); }
+

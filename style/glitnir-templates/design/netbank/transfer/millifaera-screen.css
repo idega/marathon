@@ -1,0 +1,10 @@
+form .footnote {
+  margin : 10px -10px 0 -10px;
+  padding : 10px;
+  border-top : 1px dashed #ccc;
+}
+ul.fi_chk li {
+  display : inline;
+  margin-right : 16px;
+}
+

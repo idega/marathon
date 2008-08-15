@@ -1,0 +1,614 @@
+/* **********************************************************
+***   Glitnir Basics Modifications                       ***
+*********************************************************** */
+
+/* ***  topnav (Header navigation)  *** */
+.wrap .topnav {
+  left : auto;
+  right : 0;
+  width : 537px;
+}
+.topnav li.mypage     { width : 81px; }
+.topnav li.transfer   { width : 80px; }
+.topnav li.accounts   { width : 119px; }
+.topnav li.crcards    { width : 131px; }
+.topnav li.bills      { width : 126px; }  /* width is place here instead on the <A> element to avoid potential bug in Opera 8.5 and other browsers */
+.topnav li.mypage a   { background-image : url(i/topnav/is/mypage.png); }
+.topnav li.transfer a { background-image : url(i/topnav/is/transfer.png); }
+.topnav li.accounts a { background-image : url(i/topnav/is/accounts.png); }
+.topnav li.crcards a  { background-image : url(i/topnav/is/crcards.png); }
+.topnav li.bills a    { background-image : url(i/topnav/is/bills.png); }
+
+.lang-en .topnav li.mypage     { width : 81px; }
+.lang-en .topnav li.transfer   { width : 80px; }
+.lang-en .topnav li.accounts   { width : 119px; }
+.lang-en .topnav li.crcards    { width : 131px; }
+.lang-en .topnav li.bills      { width : 126px; }
+.lang-en .topnav li.mypage a   { background-image : url(i/topnav/is/mypage.png); }
+.lang-en .topnav li.transfer a { background-image : url(i/topnav/is/transfer.png); }
+.lang-en .topnav li.accounts a { background-image : url(i/topnav/is/accounts.png); }
+.lang-en .topnav li.crcards a  { background-image : url(i/topnav/is/crcards.png); }
+.lang-en .topnav li.bills a    { background-image : url(i/topnav/is/bills.png); }
+
+
+
+
+/* headings */
+
+.pgmain h2 {
+  clear : both;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  margin: 0 -10px 10px -10px;
+  padding: 4px 10px 4px;
+  background: #f8f8f8 url(i/sect-head.gif) 0 100% repeat-x;
+  font-size: 1.09em;
+}
+
+
+
+
+
+/* ***  topbox (Page title + content/introduction)  *** */
+.topbox .boxbody {
+  position : relative;
+}
+.topbox .img {
+  float : left;
+  margin : 0 5px 5px 0;
+  _display : inline;
+}
+
+.topbox .help {
+  position : absolute;
+  margin-top : -8px;
+  top : -1.2em;
+  right : 10px;
+  width : 5em;
+  text-align : right;
+}
+.topbox .help a {
+  text-decoration : none;
+  color : #555;
+  padding : 0 0 1px 15px;
+  background : url(i/icn/s/help.gif) 0 50% no-repeat;
+}
+
+
+
+
+.pgmain .box {
+  margin-top : 1.5em;
+  margin-bottom : 6px;
+}
+
+.pgmain .box .boxhead {
+  margin : 0 1px;
+  border-top : 1px solid #cfcfcf;
+  background : #fafafa url(i/sect-head.gif) 0 100% repeat-x;
+  padding : 4px 10px 6px 10px;
+  border-bottom : 1px solid #cfcfcf;
+  font-size : 1.09em;
+}
+.pgmain .box .boxbody {
+  margin : 0 1px;
+  padding : 0 10px;
+}
+
+.pgmain table,
+.pgmain caption {
+  margin : 0 -10px 5px -10px;
+  width : 568px;
+  border-bottom : 1px solid #fff;
+}
+.width1 .pgmain table,
+.width1 .pgmain caption { width : 768px; }
+
+.threecol .pgmain table,
+.threecol .pgmain caption { width : 568px; }
+.width1 .threecol .pgmain table,
+.width1 .threecol .pgmain caption { width : 768px; }
+
+
+
+
+.footnote {
+  font-size : .91em;
+  color : #444;
+  margin : 0;
+}
+
+
+
+/* ***  Common table-row actions (icon-buttons) */
+/* The buttons */
+ td.act a {
+  float : left;
+  margin : -2px 3px -2px 0;
+  width : 16px;
+  padding-top : 16px;
+  height : 0;
+  overflow : hidden;
+  background : none 0 0 no-repeat;
+}
+/* The legends: */
+ul.iconlegend { 
+  float : right;
+  margin-top : -2px;
+  margin-bottom : 3px;
+  text-align : right;
+  padding : 1px 0 1px 10px;
+  white-space : nowrap;
+}
+ul.iconlegend li {
+  display : inline;
+  background : none 0 50% no-repeat;
+  padding : 1px 5px 1px 19px;
+  margin-left : 10px;
+}
+/* The icons: */
+td.act a.repeat,
+ul.iconlegend li.repeat { background-image : url(i/icn/s/autopay.gif); }
+td.act a.timed,
+ul.iconlegend li.timed  { background-image : url(i/icn/s/clock.gif); }
+td.act a.pay,
+ul.iconlegend li.pay   { background-image : url(i/icn/s/pay.gif); } 
+
+
+
+
+
+
+
+
+
+/* **********************************************************
+***   General Homebank-Specific Elements                  ***
+*********************************************************** */
+
+/* ***  langnav (Language selection menu)  *** */
+.langnav {
+  position : absolute;
+  top : 13px;
+  right : 90px;
+  margin-right : 9em;
+  width : 140px;
+  z-index : 1;
+}
+.langnav .boxhead { position:absolute;right:9999px;left:auto; }
+.langnav li {
+  float : left;
+  width : 27px;
+}
+.langnav a {
+  display : block;
+  width : 100%;
+  height : 0;
+  padding-top : 25px;
+  overflow : hidden;
+  background : url(i/lang-flags.png) 0 0 no-repeat;
+}
+.langnav .is a { background-position :    0px 0; }
+.langnav .en a { background-position :  -30px 0; }
+.langnav .dk a { background-position :  -60px 0; }
+.langnav .no a { background-position :  -90px 0; }
+.langnav .pl a { background-position : -120px 0; }
+
+
+
+
+
+
+
+/* ***  extranav (sitemap & print)  *** */
+.extranav {
+  position : absolute;
+  top : 21px;
+  margin-top : -.6em;
+  right : 31px;
+  margin-right : 2.82em;
+  width : 11em;
+  text-align : right;
+}
+.extranav .boxhead { position:absolute;right:9999px; }
+.extranav ul { padding : 3px 0; }
+.extranav li { display : inline; }
+.extranav a {
+  padding : 2px 0 3px 19px;
+  background : none 0 67% no-repeat;
+}
+.extranav .print a { background-image : url(i/icn/s/print.gif); }
+.extranav .sitemap a { background-image : url(i/icn/s/sitemap.gif);  margin-left : 12px; }
+
+
+
+
+
+/* ***  tinyinbox (sidebar list of unread messages)  *** */
+/* Extends .plainnav */
+.tinyinbox .boxhead {
+  background-image : url(../glitnir/i/pebox/icn/smiley.png);
+}
+.tinyinbox .boxbody li.unread { font-weight : bold; }
+
+
+
+
+
+/* ***  pplsearch (sidebar "þjóðskrá" searchbox)  *** */
+.pplsearch .boxhead {
+  background-image : url(../glitnir/i/pebox/icn/person.png);
+}
+.pplsearch .boxbody {
+  position : relative;
+  padding-bottom : 18px;
+}
+
+.pplsearch .fi_txt { padding-bottom : 3px; }
+.pplsearch .fi_txt label { position:absolute;right:9999px; }
+.pplsearch .fi_txt input { width : 130px; }
+
+.pplsearch .fi_rdo { margin-right : -10px; }
+.pplsearch .fi_rdo li {
+  display : inline;
+  padding-right : 8px;
+}
+.pplsearch .fi_rdo input {
+  margin-left : 0;
+  margin-right : 0;
+  _margin-left : -3px;
+  _margin-right : -3px;
+}
+
+.pplsearch .fi_img {
+  position : absolute;
+  top : 3px;
+  margin-top : .7em;
+  left : 150px;
+}
+
+
+
+
+
+/* ***  quserinfo (quick username, logout)  *** */
+.quserinfo .greeting {
+  position : absolute;
+  left : 203px;
+  padding-top : 17px; /* 12 + 5 */
+  margin-top : -.6em;
+  width : 400px;
+  overflow : hidden; /* to hide the left-border on the first <a> element. */
+}
+.quserinfo .greeting span { position:absolute;right:9999px; }
+.quserinfo .greeting a {
+  color : #333;
+  text-decoration : none;
+  margin : 0 0 0 -3px;
+  border-left : 1px solid #ccc;
+  padding : 0 6px;
+}
+.quserinfo .greeting a:hover,
+.quserinfo .greeting a:focus,
+.quserinfo .greeting a:active {
+  text-decoration : underline;
+}
+
+
+.quserinfo .logout {
+  position : absolute;
+  top : 21px;
+  margin-top : -.6em;
+  right : 0;
+  width : 5em;
+  text-align : right;
+  padding : 3px 0;
+}
+.quserinfo .logout a {
+  padding : 2px 0 3px 19px;
+  background : url(i/icn/s/logout.gif) 0 67% no-repeat;
+}
+
+
+
+
+
+/* ***  pagedatetime  *** */
+.pagedatetime {
+  position : absolute;
+  top : 151px;  /* (134 + 12) + 5 */
+  margin-top : -.6em;
+  right : 10px;
+  text-align : right;
+  color : #555;
+}
+
+
+
+
+/* ***  mainnav (Main left-hand side navigation)  *** */
+.mainnav .boxhead { }
+.mainnav .boxbody { }
+/*
+  brutally kill "most" previous styles 
+  with stronger selectors ... 
+*/
+.mainnav li.open,
+.mainnav li.parent,
+.mainnav li.selected {
+  background: #BA102C;
+}
+.mainnav li.open a,
+.mainnav li.parent a,
+.mainnav li.selected a {
+  color : #fff;
+}
+
+.mainnav ul,
+.mainnav .boxbody ul {
+  border-bottom : 1px solid #c9d0d4;
+/*  background : #fff ; */
+  border : 0;
+  margin : 0;
+  padding : 0;
+}
+.mainnav .boxbody .branch li, 
+.mainnav .boxbody li { 
+  margin : 0;
+  border : 0;
+  padding : 0;
+  background-image : none;
+}
+.mainnav .boxbody .branch a,
+.mainnav .boxbody a {
+  padding-top : 4px;
+  padding-bottom : 4px;
+  border : 0;
+  background : transparent none 0 100% no-repeat;
+  background-image : none;
+  text-decoration : none;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+/*
+.mainnav .boxbody li.open,
+.mainnav .boxbody li.parent, 
+.mainnav .boxbody li.selected {
+  background : red;
+}
+*/
+.mainnav .boxbody ul li i {
+  display : none;
+}
+/**/
+.mainnav .boxbody a:hover,
+.mainnav .boxbody a:focus,
+.mainnav .boxbody a:active { text-decoration : underline; }
+
+/* level 2 */
+.mainnav .boxbody .branch a {
+  border-top : 1px solid #c9d0d4;
+}
+.mainnav .boxbody ul ul {
+  background : #f5eff0 ;
+}
+
+/* arrows */
+.mainnav .boxbody ul ul li i {
+  position : absolute;
+  z-index : 1;
+  display : block;
+  background : url(../glitnir/i/mainnav/arrow.gif) 0 0 no-repeat;
+  width : 15px;
+  height : 15px;
+  left : 155px;
+  top : .6em;
+  margin-top : -3px;
+}
+
+.mainnav ul ul li.open i, /* gray arrow on active */
+.mainnav ul ul li.parent i, 
+.mainnav ul ul li.selected i {
+  background-position : 0 -30px;
+}
+
+
+/* level 3 */
+.mainnav .boxbody .branch ul a {
+  border-top : 0;
+}
+.mainnav .boxbody .branch ul {
+  border-top : 1px solid #c9d0d4;
+  border-bottom : 1px solid #c9d0d4;
+  margin-bottom : -1px;
+}
+
+
+
+/* hide/show rules for the collapse script */
+.mainnav .closed ul,
+.mainnav .open .closed ul {
+  display : none;
+}
+.mainnav .open ul,
+.mainnav .open .open ul {
+  display : block;
+}
+
+
+
+
+/* generic table styles common to all tables within the netbank */
+
+/* tables in text */
+.pgmain table {
+  border : 1px solid #ddd;
+  width : 100%;
+}
+table .col1 {
+  width : 20px;
+}
+table a.expand {
+  border : 0;
+  display : block;
+  width : 12px;
+  height : 12px;
+  padding : 0;
+  background : #cde;
+  text-align : left;
+  text-indent : -300em;
+  overflow : hidden;
+}
+
+
+/* inputs in tables */
+td.num input,
+td input.num {
+  text-align : right;
+}
+td input {
+  padding : 0;
+  border-width : 1px;
+  margin-bottom : -3px;
+}
+
+
+/* expandable table */
+tr.expanded td {
+  border-top : 1px solid #bbb;
+}
+tr.subrow td {
+  border-bottom : 1px solid #bbb;
+  border-top : 0;
+  border-top : 1px solid #ddd;
+  padding : 0 20px 10px 20px;
+}
+tr h3 {
+  border-bottom : 1px solid #ddd;
+  clear : both;
+  padding-top : 8px;
+  margin : 0 0 5px 0;
+  font-size : 1em;
+}
+tr.odd h3 {
+  border-bottom : 1px solid #ccc;
+}
+tr.subrow .set {
+  float : left;
+  width : 49%;
+  margin : 0 0 2px 0;
+}
+tr.subrow .set b {
+  width : 49%;
+  float : left;
+  display : block;
+  font-weight : normal;
+}
+
+.negative {
+  color : #b00 !important;
+}
+
+
+
+
+
+
+/* generic form styles common to all forms within the netbank */
+
+.fi_txt label,
+.fi_sel label {
+  font-weight : bold;
+  padding : 2px 0;
+  display : block;
+}
+
+div.fieldrow {
+  clear : both;
+  margin : 0;
+  padding : 0;
+  border : 0;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+div.fieldrow:after { display:block; clear:both; content:"."; visibility:hidden; font-size:1px; height:1px; margin-top:-1px; } 
+
+.fieldrow div.fi_txt,
+.fieldrow div.fi_sel,
+.fieldrow div.fi_chk,
+.fieldrow div.fi_btn {
+  float : left;
+  margin : 0;
+  padding-bottom : 8px;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+.fieldrow div.fi_txt,
+.fieldrow div.fi_sel,
+.fieldrow div.fi_btn {
+  margin-right : 10px;
+}
+
+.fieldrow input,
+.fieldrow select {
+  margin-right : 4px;
+}
+
+form small
+{
+  font-size: 0.91em;
+  display : block;
+  clear : left;
+}
+
+/* hér vantar betri stíl, eitthvað með icon td. */
+.fi_date input { 
+  background : #ffe;
+}
+
+
+/* buttonrow */
+
+.buttonpanel {
+  clear : both;
+  border-top : 1px solid #d0d0d0;
+  padding : 10px;
+  margin : 0 -10px;
+  background : url(i/buttonpanel.gif) 0 0 repeat-x;
+  text-align : right;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+
+
+
+/* tabs */
+
+.tabs {
+  border-bottom : 1px solid #ccc;
+  margin : 1em 0 0 0 ;
+  padding : 0px 20px;
+  _height:1px;min-height:0; /* ie hasLayout fix */
+  _overflow : hidden;
+}
+.tabs:after { display:block; clear:both; content:"."; visibility:hidden; font-size:1px; height:0; }
+.tabs li {
+}
+.tabs li a {
+  border : 1px solid #ccc;
+  margin-bottom : -1px;
+  float : left;
+  padding : 2px 6px;
+  margin-right : 6px;
+  background-color : #eee;
+}
+.tabs li.current a {
+  border-bottom : 1px solid #fff;
+  background-color : #fff;
+  color : #555;
+  text-decoration : none;
+}
+
+
+
+
+
+
+
+

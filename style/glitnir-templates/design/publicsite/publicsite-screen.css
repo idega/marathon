@@ -1,0 +1,295 @@
+/* **********************************************************
+***   Glitnir Basics Modifications                       ***
+*********************************************************** */
+
+/* ***  topnav (Header navigation)  *** */
+.topnav { width : 440px; }
+
+.topnav li.home       { width : 75px; }
+.topnav li.personal   { width : 107px; }
+.topnav li.business   { width : 82px; }
+.topnav li.markets    { width : 81px; }
+.topnav li.about      { width : 87px; }  /* width is place here instead on the <A> element to avoid potential bug in Opera 8.5 and other browsers */
+.topnav li.home a     { background-image : url(i/topnav/is/home.png); }
+.topnav li.personal a { background-image : url(i/topnav/is/personal.png); }
+.topnav li.business a { background-image : url(i/topnav/is/business.png); }
+.topnav li.markets a  { background-image : url(i/topnav/is/markets.png); }
+.topnav li.about a    { background-image : url(i/topnav/is/about.png); }
+
+.lang-en .topnav li.home       { width : 67px; }
+.lang-en .topnav li.personal   { width : 83px; }
+.lang-en .topnav li.business   { width : 86px; }
+.lang-en .topnav li.markets    { width : 78px; }
+.lang-en .topnav li.about      { width : 108px; }
+.lang-en .topnav li.home a     { background-image : url(i/topnav/en/home.png); }
+.lang-en .topnav li.personal a { background-image : url(i/topnav/en/personal.png); }
+.lang-en .topnav li.business a { background-image : url(i/topnav/en/business.png); }
+.lang-en .topnav li.markets a  { background-image : url(i/topnav/en/markets.png); }
+.lang-en .topnav li.about a    { background-image : url(i/topnav/en/about.png); }
+
+
+
+
+
+/**/
+
+/* ***  topbox (Page title + content/introduction)  *** */
+.topbox {
+  position : relative;
+  margin-top : -7px;
+  background : url(i/topbox.png) 50% 0 no-repeat;
+  padding-top : 57px;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+.width1 .topbox { background-position : 0 0; }
+
+.topbox .boxhead {
+  padding-top : 1px; /* hack : otherwise the text wraps in Opera 8.54  when the span.shadow appears */
+  margin : -1px 0 11px 16px;
+  font-size : 2em;
+  color : #000;
+  background-position : 0 50%;
+  background-repeat : no-repeat;
+ /*  *** use this code to add an icon to a topbox ***
+  background-image : url(../i/icn/l/lock.gif);
+  padding-left : 35px;
+ */
+}
+.topbox .boxhead span.shadow {  /* a silly shadow element that gets dynamically added to the dom via Javascript. */
+  display : block;
+  margin-bottom : -1.25em;
+  margin-left : 1px;
+  color : #fff;
+}
+.topbox .boxbody {
+  background-color : #fff;
+  border-left : 1px solid #c9d0d4;
+  border-right : 1px solid #c9d0d4;
+  padding : 6px 11px 1em 11px;
+}
+
+
+
+
+
+/* **********************************************************
+***   General Homebank-Specific Elements                  ***
+*********************************************************** */
+
+/* ***  qsitesearch (Header search box)  *** */
+.qsitesearch {
+  position: absolute;
+  top: 78px;
+  margin-top : -1.2em;
+  right: -8px;
+  width : 110px;
+  color: #fff;
+}
+.width1 .qsitesearch {
+  width : 205px;
+  right: 0;
+}
+
+.qsitesearch .boxhead { position:absolute;right:9999px; }
+.qsitesearch .boxbody {}
+
+.qsitesearch .fi_txt {
+  float : left;
+  padding : 0;
+}
+
+.qsitesearch .fi_txt label {
+  display : block;
+  font-weight: bold;
+  padding-left : 5px;
+}
+.qsitesearch .fi_txt input {
+  margin : 2px 3px 0 0;
+  width : 54px;
+  border : none;
+  padding : 6px 7px 4px 7px;
+  height : 17px;
+  background : #fff url(i/qsearch/field.png) 50% 0 no-repeat;
+}
+.width1 .qsitesearch .fi_txt input {
+  width : 139px;
+}
+
+.qsitesearch .fi_txt input:focus,
+.qsitesearch .fi_txt input:hover { background-position: 50% -27px; }
+
+
+.qsitesearch .fi_btn {
+  padding-top : 1.2em;
+}
+.qsitesearch .fi_btn input {
+  /* input-button image replacement */padding:0; margin:0; border:none; line-height:0; font-size:999px; letter-spacing:-99999em; overflow:hidden;
+  margin : 4px 0 0 0;
+  _margin-top : 6px;
+  width : 31px;
+  height : 28px;
+  background  : url(i/qsearch/button.png) 0 0 no-repeat;
+}
+*:first-child+html
+.qsitesearch .fi_btn input { margin-top : 6px; } /* ie7 hack */
+
+.qsitesearch .fi_btn input:focus,
+.qsitesearch .fi_btn input:hover { background-position : 0 -32px; }
+
+
+
+
+
+
+
+/* ***  fontresize (buttons)  *** */
+.fontresize {
+  position : absolute;
+  top : 61px;
+  right : 107px;
+  width : 29px;
+}
+.width1 .fontresize { right : 235px; }
+
+.fontresize .boxhead { position:absolute;right:9999px; }
+.fontresize li { width : 100%; }
+.fontresize .boxbody a {
+  display : block;
+  width : 100%;
+  padding-top : 29px;
+  height : 0;
+  overflow : hidden;
+  background : none 1px 1px no-repeat;
+}
+.fontresize li.normal a { background-image : url(i/font-normal.gif); }
+.fontresize li.large a  { background-image : url(i/font-large.gif); }
+
+
+
+
+
+
+/* ***  extranav (sitemap & print)  *** */
+.extranav {
+  position : absolute;
+  top : 0;
+  right : -4px;
+  width : 30em;
+  text-align : right;
+  font-weight : bold;
+}
+
+.extranav .boxhead { position:absolute;right:9999px; }
+.extranav .boxbody {
+  padding-top : 7px;
+  padding-bottom : 22px;
+}
+
+.extranav li {
+  display : inline;
+  padding : 7px 0 22px 0;
+  _padding : 0;
+  margin-right : 4px;
+  _margin-left : 2px;
+  background : url(i/extranav/bak.png) 100% 100% no-repeat;
+}
+*:first-child+html .extranav li { /* ie7 fix */
+  padding : 0;
+  margin-left : 2px;
+}
+.extranav .boxbody a {
+  text-decoration : none;
+  padding : 7px 10px 22px 10px;
+  background : url(i/extranav/end.png) 0 100% no-repeat;
+}
+.extranav li.english a { padding-right : 14px; }
+.extranav li.english {
+  background-image : url(i/extranav/bak-english.png);
+}
+.extranav .boxbody a,
+.extranav .boxbody a:hover,
+.extranav .boxbody a:focus,
+.extranav .boxbody a:active { color : #1f1d21; }
+
+
+
+
+
+/* ***  homebanklinks (login and apply buttons)  *** */
+.homebanklinks {
+  margin-bottom : 8px;
+}
+.homebanklinks .boxhead { position:absolute;right:9999px; }
+.homebanklinks ul.boxbody {}
+.homebanklinks li {
+  width : 100%;
+  _height:0;min-height:0;/* ie hasLayout fix */
+}
+.homebanklinks .boxbody a {
+  display : block;
+  width : 100%;
+  height : 0;
+  background : none 0 0 no-repeat;
+  overflow : hidden;
+}
+.homebanklinks .login a {
+  background-image : url(i/homebanklinks/login.png);
+  padding-top : 54px;
+}
+.homebanklinks .apply a {
+  background-image : url(i/homebanklinks/apply.png);
+  padding-top : 34px;
+  margin-top : -5px;
+  margin-top : 0;
+}
+.homebanklinks .login a:hover,
+.homebanklinks .login a:focus,
+.homebanklinks .login a:active { background-position : 0 -54px; }
+.homebanklinks .apply a:hover,
+.homebanklinks .apply a:focus,
+.homebanklinks .apply a:active { background-position : 0 -34px; }
+
+
+
+
+
+
+/* ***  becomecustomer (call to action advert - tel# and registration field)  *** */
+.becomecustomer {
+  margin-bottom : 8px;
+}
+.becomecustomer .boxhead { position:absolute;right:9999px; }
+.becomecustomer .boxbody {
+  padding : 38px 0 0 22px;
+  height : 71px;  /* 109 - 38 */
+  background : url(i/becomecust/bak.png) 0 0 no-repeat;
+}
+.becomecustomer .fi_txt,
+.becomecustomer .fi_btn { float : left; }
+
+.becomecustomer .fi_txt label { position:absolute;right:9999px; }
+.becomecustomer .fi_txt input {
+  margin : 2px 12px 0 0;
+  _margin-top : 1px;
+  padding : 0;
+  border : none;
+  background : transparent none;
+  width : 118px;
+  height : 16px;
+}
+.becomecustomer .fi_btn input {
+  /* input-button image replacement */padding:0; margin:0; border:none; line-height:0; font-size:999px; letter-spacing:-99999em;
+  width : 20px;
+  height : 20px;
+  background : url(i/becomecust/arrow.png) 0 0 no-repeat;
+}
+.becomecustomer .phoneus { position:absolute;right:9999px; }
+
+
+
+
+
+
+
+
+

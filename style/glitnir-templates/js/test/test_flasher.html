@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="is" lang="is">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Tests / Examples for the flasher object</title>
+  <link rel="stylesheet" type="text/css" media="screen, screen" href="style.css" />
+  
+  <script src="../glitnir-utils_1.0-source.js" type="text/javascript"></script>
+
+<style type="text/css" media="screen, screen">
+
+.blink {
+  background : #fc8;
+}
+td.flash {
+  background : #800;
+  color : #fff;
+}
+.anim {
+  background : url(yellow_flash.gif) 0 0 repeat;
+}
+a.flash {
+  background : #FDD;
+  color : #600;
+}
+</style>
+
+</head>
+<body>
+
+
+<table cellspacing="0" summary="" border="1">
+  <tr class="th">
+    <th class="col1">zxb</th>
+    <th class="col2">wey</th>
+    <th class="col3">wey</th>
+  </tr>
+  <tr>
+    <td id="x1">1234</td>
+    <td>wt</td>
+    <td>123</td>
+  </tr>
+  <tr class="alt">
+    <td>164</td>
+    <td id="x2">oy</td>
+    <td>61346</td>
+  </tr>
+  <tr>
+    <td>476</td>
+    <td id="x3">cmbv</td>
+    <td>247</td>
+  </tr>
+</table>
+
+
+<p>
+  <a href="#" id="t1">Flash it! (1)</a>
+  <a href="#" id="t2">Flash it! (2)</a>
+  <a href="#" id="t3">Flash it! (3)</a>
+</p>
+
+<p>
+  <a href="#" id="t4">Flash me!</a>
+</p>
+
+
+<script type="text/javascript"><!--
+
+// examples 
+
+
+function flash1() {
+  animate.flash($("x1"), 500, "blink", -1); // supported but discouraged
+  return false;
+}
+Event.add($("t1"), "click", flash1);
+
+
+function flash2() {
+  animate.flash($("x2"), 100, "flash", 5); //
+  return false;
+}
+Event.add($("t2"), "click", flash2);
+
+
+function flash3() {
+  animate.flash($("x3"), 1000, "anim", 1); // 
+  return false;
+}
+Event.add($("t3"), "click", flash3);
+
+
+function flash4() {
+  animate.flash($("t4"), 400, "flash"); 
+  this.blur();
+  return false;
+}
+Event.add($("t4"), "click", flash4);
+
+  
+// --></script>
+
+</body>
+</html>

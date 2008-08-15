@@ -1,0 +1,22 @@
+.glitnir_email .curr {
+  padding-left: 42px;
+  width: 65%;
+  background: none no-repeat 20px 50%;
+}
+
+/* Currency fields with logos */
+.glitnir_email .c_usd { background-image: url(i/usd.png); }
+.glitnir_email .c_gbp { background-image: url(i/gbp.png); }
+.glitnir_email .c_cad { background-image: url(i/cad.png); }
+.glitnir_email .c_dkk { background-image: url(i/dkk.png); }
+.glitnir_email .c_nok { background-image: url(i/nok.png); }
+.glitnir_email .c_sek { background-image: url(i/sek.png); }
+.glitnir_email .c_chf { background-image: url(i/chf.png); }
+.glitnir_email .c_jpy { background-image: url(i/jpy.png); }
+.glitnir_email .c_xdr { background-image: url(i/xdr.png); }
+.glitnir_email .c_eur { background-image: url(i/eur.png); }
+.glitnir_email .c_aud { background-image: url(i/aud.png); }
+.glitnir_email .c_hkd { background-image: url(i/hkd.png); }
+.glitnir_email .c_sgd { background-image: url(i/sgd.png); }
+.glitnir_email .c_gvt { background-image: url(i/gvt.png); }
+.glitnir_email .c_isk { background-image: url(i/isk.png); }

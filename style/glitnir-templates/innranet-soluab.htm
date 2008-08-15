@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="is" xml:lang="is">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>glitnir.is &gt; Netbanki &gt; Mín síða</title>
+
+  <script src="js/glitnir-utils_1.0.js" type="text/javascript"></script>
+  <script src="js/intra/test.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="design/glitnir/glitnir-screen.css" media="screen, screen" />
+  <link rel="stylesheet" href="design/innranet/innranet-screen.css" media="screen, screen" />
+  <link rel="stylesheet" href="design/innranet/soluab/soluab-screen.css" media="screen, screen" />
+
+</head>
+<body class="width1">
+<div class="threecol pgwrap lang-is">
+
+
+  <div class="pghead">
+  <div class="wrap">
+
+    <div class="brand">
+      <a href="/" title="Glitnir - Upphafssíða" class="logo"><img src="design/glitnir/i/logo.png" alt="Glitnir" /></a>
+      <span class="stream">-</span>
+      <span class="subsite">Einstaklingar</span>
+    </div>
+    <div class="stream"><a accesskey="2" href="#pgextra2">Beint í leiðakerfi vefsins</a></div>
+
+  </div>
+  </div>
+  <hr class="stream" />
+
+
+
+  <div class="pgmain">
+  <div class="wrap">  
+  <!-- start "pgmain" -->
+
+
+    <div class="topbox">
+      <h1 class="boxhead">Test</h1> 
+      <div class="boxbody">
+
+
+
+
+
+
+        <div class="Form">
+
+          <div id="panelStarfsmadur" class="panel">
+            <h2>Eigandi ábendingar</h2>
+            <fieldset>
+              <div class="fi_row">
+                <div class="fi_txt fi_req">
+                  <label for="_ctl1_txtStarfsmadurKennitala">Kennitala:<span id="lookupEmployeeProgress" style="display:none">
+                    <img src="../Modules/Soluabending/progress.gif" alt="" border="0" /></span>
+                  </label>
+                  <input name="_ctl1:txtStarfsmadurKennitala" type="text" maxlength="11" id="_ctl1_txtStarfsmadurKennitala" onkeyup="LookupEmployee(this.value)" />
+                </div>
+                <div class="fi_txt">
+                  <label>Fullt nafn:</label>
+                  <span id="_ctl1_spanStarfsmadurNafn"></span>
+                </div>
+                <div class="fi_txt">
+                  <label>Deild:</label>
+                  <span id="_ctl1_spanStarfsmadurDeild"></span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div id="panelVidskiptavinur" class="panel">
+            <h2>Upplýsingar um viðskiptavin</h2>
+            <fieldset>
+              <div class="fi_row">
+                <div class="fi_txt fi_req">
+                  <label for="_ctl1_txtVidskiptavinurKennitala">Kennitala *:<span id="lookupCustomerProgress" style="display:none"><img src="../Modules/Soluabending/progress.gif" alt="" border="0" /></span></label>
+                  <input name="_ctl1:txtVidskiptavinurKennitala" type="text" maxlength="11" id="_ctl1_txtVidskiptavinurKennitala" onkeyup="LookupCustomer(this.value)" />
+                </div>
+              </div>
+              <div class="fi_row">
+                <div class="fi_txt fi_req">
+                  <label for="_ctl1_txtVidskiptavinurNafn">Fullt nafn *:</label> 
+                  <input name="_ctl1:txtVidskiptavinurNafn" type="text" maxlength="50" id="_ctl1_txtVidskiptavinurNafn" />
+                </div>
+                <div class="fi_txt">
+                  <label for="_ctl1_txtVidskiptavinurHeimilisfang">Heimilisfang:</label>
+                  <input name="_ctl1:txtVidskiptavinurHeimilisfang" type="text" maxlength="50" id="_ctl1_txtVidskiptavinurHeimilisfang" size="25" />
+                </div>
+              </div>
+              <div class="fi_row">
+                <div class="fi_txt">
+                  <label for="_ctl1_txtVidskiptavinurPostnumer">Póstnúmer:</label>
+                  <input name="_ctl1:txtVidskiptavinurPostnumer" type="text" maxlength="3" id="_ctl1_txtVidskiptavinurPostnumer" />
+                </div>
+                <div class="fi_txt"> 
+                  <label for="_ctl1_txtVidskiptavinurStadur">Staður:</label> 
+                  <input name="_ctl1:txtVidskiptavinurStadur" type="text" maxlength="50" id="_ctl1_txtVidskiptavinurStadur" />
+                </div>
+              </div>
+              <div class="fi_row">
+                <div class="fi_txt">
+                  <label for="_ctl1_txtVidskiptavinurSimiHeima">Heimasími:</label>
+                  <input name="_ctl1:txtVidskiptavinurSimiHeima" type="text" maxlength="15" id="_ctl1_txtVidskiptavinurSimiHeima" />
+                </div>
+                <div class="fi_txt">
+                  <label for="_ctl1_txtVidskiptavinurSimiVinna">Vinnusími:</label>
+                  <input name="_ctl1:txtVidskiptavinurSimiVinna" type="text" maxlength="15" id="_ctl1_txtVidskiptavinurSimiVinna" />
+                </div>
+                <div class="fi_txt">
+                  <label for="_ctl1_txtVidskiptavinurSimiGsm">GSM:</label>
+                  <input name="_ctl1:txtVidskiptavinurSimiGsm" type="text" maxlength="15" id="_ctl1_txtVidskiptavinurSimiGsm" />
+                </div>
+              </div>
+              <div class="fi_row">
+                <div class="fi_txt">
+                  <label for="_ctl1_txtVidskiptavinurNetfang">Netfang:</label>
+                  <input name="_ctl1:txtVidskiptavinurNetfang" type="text" maxlength="100" id="_ctl1_txtVidskiptavinurNetfang" />
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div id="panelBankingService" class="panel">
+            <h2 class="fi_chk"><input name="_ctl1:chkBankingService" id="_ctl1_chkBankingService" type="checkbox" onclick="toggleDiv(this, document.getElementById('_ctl1_divBankingService'));" /> <label for="_ctl1_chkBankingService">Bankaþjónusta</label>	</h2> 
+            <fieldset id="_ctl1_divBankingService">
+              <p>Óskað er eftir tilboði í bankaviðskipti</p>
+              <div class="fi_sel">
+                <label for="cmbUtibu">Útibú sem viðskiptavinur kýs:</label>
+                <select name="_ctl1:cmbUtibu" id="_ctl1_cmbUtibu">
+                  <option value="">Ekkert val</option>
+                  <option value="0512">0512 Seltjarnarnes</option>
+                  <option value="0513">0513 L&#230;kjarg&#246;tu</option>
+                  <option value="0515">0515 Kirkjusandi</option>
+                  <option value="0525">0525 H&#225;aleitisbraut</option>
+                  <option value="0526">0526 Su&#240;urlandsbraut</option>
+                  <option value="0527">0527 Sk&#250;tuvogi</option>
+                  <option value="0528">0528 Gullinbr&#250;</option>
+                  <option value="0537">0537 &#222;arabakki</option>
+                  <option value="0538">0538 Sm&#225;ralind</option>
+                  <option value="0542">0542 Keflav&#237;k</option>
+                  <option value="0545">0545 Hafnarfj&#246;r&#240;ur</option>
+                  <option value="0546">0546 Gar&#240;ab&#230;r</option>
+                  <option value="0549">0549 Mosfellsb&#230;r</option>
+                  <option value="0552">0552 Akranes</option>
+                  <option value="0556">0556 &#205;safj&#246;r&#240;ur</option>
+                  <option value="0565">0565 Akureyri</option>
+                  <option value="0567">0567 H&#250;sav&#237;k</option>
+                  <option value="0568">0568 Egilssta&#240;ir</option>
+                  <option value="0569">0569 Rey&#240;arfj&#246;r&#240;ur</option>
+                  <option value="0582">0582 Vestmannaeyjar</option>
+                  <option value="0586">0586 Selfoss</option>
+                </select>
+              </div>
+              <div class="fi_row">
+                <div class="fi_subset">
+                  <label>Er umsækjandi í viðskiptum við Glitni?</label>
+                  <ul class="fi_rdo">
+                    <li><input value="True" name="_ctl1:rbBankathjonustaVidsiptiVidGlitni" id="_ctl1_rbBankingServiceVidskiptiVidGlitniJa" type="radio" /><label for="_ctl1_rbBankingServiceVidskiptiVidGlitniJa">Já</label></li>
+                    <li><input value="False" name="_ctl1:rbBankathjonustaVidsiptiVidGlitni" id="_ctl1_rbBankingServiceVidskiptiVidGlitniNei" type="radio" /><label for="_ctl1_rbBankingServiceVidskiptiVidGlitniNei">Nei</label></li>
+                    <li><input value="rbBankathjonustaVidskiptiVidGlitniVeitEkki" name="_ctl1:rbBankathjonustaVidsiptiVidGlitni" id="_ctl1_rbBankathjonustaVidskiptiVidGlitniVeitEkki" type="radio" checked="checked" /><label for="_ctl1_rbBankathjonustaVidskiptiVidGlitniVeitEkki">Veit ekki</label></li>
+                  </ul>
+                </div>
+                <div class="fi_subset">
+                  <label>Ef Já, veldu þjónustu</label>
+                  <ul class="fi_chk">
+                    <li><input name="_ctl1:chkBankingServiceAssetManagement" id="_ctl1_chkBankingServiceAssetManagement" type="checkbox" /><label for="_ctl1_chkBankingServiceAssetManagement">Eignastýring</label></li>
+                    <li><input name="_ctl1:chkBankingServiceFyrirtaekiErIVidskiptum" id="_ctl1_chkBankingServiceFyrirtaekiErIVidskiptum" type="checkbox" /><label for="_ctl1_chkBankingServiceFyrirtaekiErIVidskiptum">Fyrirtæki er í viðskiptum</label></li>
+                    <li><input name="_ctl1:chkBankingServicePrivateBanking" id="_ctl1_chkBankingServicePrivateBanking" type="checkbox" /><label for="_ctl1_chkBankingServicePrivateBanking">Einkabanki</label></li>
+                    <li><input name="_ctl1:chkBankingServiceGlitnirFinancing" id="_ctl1_chkBankingServiceGlitnirFinancing" type="checkbox" /><label for="_ctl1_chkBankingServiceGlitnirFinancing">Glitnir fjármögnun</label></li>
+                    <li><input name="_ctl1:chkBankingServiceAlmenni" id="_ctl1_chkBankingServiceAlmenni" type="checkbox" /><label for="_ctl1_chkBankingServiceAlmenni">Almenni lífeyrissjóðurinn</label></li>
+                    <li><input name="_ctl1:chkBankingServiceOther" id="_ctl1_chkBankingServiceOther" type="checkbox" /><label for="_ctl1_chkBankingServiceOther">Annað (skýring þarf að fylgja sem athugasemd)</label></li>					
+                  </ul>
+                </div>
+              </div>
+              <div class="fi_row">
+                <div class="fi_txt fi_bdy">
+                  <label for="txtBankingServiceComment">Athugasemdir</label>
+                  <textarea name="_ctl1:txtBankingServiceComment" id="_ctl1_txtBankingServiceComment"></textarea>
+                </div>
+                <p class="">Veldu ástæðu þess að viðkomandi vill koma í þjónustu (sala, fyrirtæki, arfur o.s.frv.). Einnig mögulega upphæð og annað sem gæti gagnast.</p>
+              </div>
+            </fieldset>
+          </div>
+
+
+          <div id="panelFinancing" class="panel">
+          <h2 class="fi_chk"><input name="_ctl1:chkFinancing" id="_ctl1_chkFinancing" type="checkbox" onclick="toggleDiv(this, document.getElementById('_ctl1_divFinancing'));" /><label for="_ctl1_chkFinancing">Fjármögnun</label></h2>
+            <fieldset id="_ctl1_divFinancing" style="DISPLAY:none">
+              <div class="fi_row">
+                <label>Hvers konar fjármögnun er sótt um?</label>
+                <ul class="fi_chk">
+                  <li><input name="_ctl1:chkFinancingRektrarFinancing" id="_ctl1_chkFinancingRektrarFinancing" type="checkbox" /><label for="_ctl1_chkFinancingRektrarFinancing">Rekstrarfjármögnun</label></li>
+                  <li><input name="_ctl1:chkFinancingBilasamningur" id="_ctl1_chkFinancingBilasamningur" type="checkbox" /><label for="_ctl1_chkFinancingBilasamningur">Bílasamningur</label></li>
+                  <li><input name="_ctl1:chkFinancingBilalan" id="_ctl1_chkFinancingBilalan" type="checkbox" /><label for="_ctl1_chkFinancingBilalan">Bilalan</label></li>
+                  <li><input name="_ctl1:chkFinancingAtvinnutaekjaFinancing" id="_ctl1_chkFinancingAtvinnutaekjaFinancing" type="checkbox" /><label for="_ctl1_chkFinancingAtvinnutaekjaFinancing">Atvinnutækjafjármögnun</label></li>
+                  <li><input name="_ctl1:chkFinancingRekstrarleiga" id="_ctl1_chkFinancingRekstrarleiga" type="checkbox" /><label for="_ctl1_chkFinancingRekstrarleiga">Rekstrarleiga</label></li>
+                  <li><input name="_ctl1:chkFinancingAtvinnuhusnaedi" id="_ctl1_chkFinancingAtvinnuhusnaedi" type="checkbox" /><label for="_ctl1_chkFinancingAtvinnuhusnaedi">Atvinnuhúsnæði</label></li>
+                  <li><input name="_ctl1:chkFinancingOther" id="_ctl1_chkFinancingOther" type="checkbox" /><label for="_ctl1_chkFinancingOther">Annað (skýring þarf að fylgja sem athugasemd)</label></li>
+                </ul>
+              </div>
+              <div class="fi_row">
+                <div class="fi_txt fi_bdy">
+                  <label for="txtFinancingComment">Athugasemdir</label>
+                  <textarea name="_ctl1:txtFinancingComment" id="_ctl1_txtFinancingComment"></textarea>
+                </div>
+                <p class="">Veldu ástæðu þess að viðkomandi vill koma í þjónustu (sala, fyrirtæki, arfur o.s.frv.). Einnig mögulega upphæð og annað sem gæti gagnast.</p>
+              </div>
+            </fieldset>
+          </div>
+          
+          <div id="panelAssetManagement" class="panel">
+          <h2 class="fi_chk"><input name="_ctl1:chkAssetManagement" id="_ctl1_chkAssetManagement" type="checkbox" onclick="toggleDiv(this, document.getElementById('_ctl1_divAssetManagement'));" /><label for="_ctl1_chkAssetManagement">Eignastýring</label></h2>
+            <fieldset id="_ctl1_divAssetManagement" style="DISPLAY:none">
+              <div class="fi_row">
+                <div class="">
+                  <label>Veldu tegund eignastýringar</label>
+                  <ul class="fi_chk">
+                    <li><input name="_ctl1:chkAssetManagementTegundAssetManagementEinstaklinga" id="_ctl1_chkAssetManagementTegundAssetManagementEinstaklinga" type="checkbox" /> <label for="_ctl1_chkAssetManagementTegundAssetManagementEinstaklinga">Eignastýringarþjónusta</label></li>
+                    <li><input name="_ctl1:chkAssetManagementTegundAlmennVerdbrefaradgjof" id="_ctl1_chkAssetManagementTegundAlmennVerdbrefaradgjof" type="checkbox" /> <label for="_ctl1_chkAssetManagementTegundAlmennVerdbrefaradgjof">Almenn verðbréfaráðgjöf</label></li>
+                    <li><input name="_ctl1:chkAssetManagementTegundVirkFjarfesting" id="_ctl1_chkAssetManagementTegundVirkFjarfesting" type="checkbox" /> <label for="_ctl1_chkAssetManagementTegundVirkFjarfesting">Virk fjárfesting</label></li>
+                    <li><input name="_ctl1:chkAssetManagementOther" id="_ctl1_chkAssetManagementOther" type="checkbox" /> <label for="_ctl1_chkAssetManagementOther">Annað (skýring þarf að fylgja sem athugasemd)</label></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="fi_row">
+                <div class="fi_txt fi_bdy">
+                  <label for="txtAssetManagementComment">Athugasemdir</label>
+                  <textarea name="_ctl1:txtAssetManagementComment" id="_ctl1_txtAssetManagementComment"></textarea>
+                </div>
+                <p class="">Veldu ástæðu þess að viðkomandi vill koma í þjónustu (sala, fyrirtæki, arfur o.s.frv.). Einnig mögulega upphæð og annað sem gæti gagnast.</p>
+              </div>
+            </fieldset>
+          </div>
+
+          <div id="panelPrivateBanking" class="panel">
+          <h2 class="fi_chk"><input name="_ctl1:chkPrivateBanking" id="_ctl1_chkPrivateBanking" type="checkbox" onclick="toggleDiv(this, document.getElementById('_ctl1_divPrivateBanking'));" /> <label for="_ctl1_chkPrivateBanking">Einkabanki</label></h2>
+            <fieldset id="_ctl1_divPrivateBanking" style="DISPLAY:none">
+              <div class="fi_txt fi_bdy">
+                <label for="txtPrivateBankingComment">Athugasemdir</label>
+                <textarea name="_ctl1:txtPrivateBankingComment" id="_ctl1_txtPrivateBankingComment"></textarea>
+              </div>
+            </fieldset>
+          </div>
+          
+          <div id="panelAddedLifeCentSavings" class="panel">
+            <h2 class="fi_chk"><input name="_ctl1:chkAddedLifeCentSavings" id="_ctl1_chkAddedLifeCentSavings" type="checkbox" onclick="toggleDiv(this, document.getElementById('_ctl1_divAddedLifeCentSavings'));" /> <label for="_ctl1_chkAddedLifeCentSavings">Viðbótarlífeyrissparnadur</label></h2>
+            <fieldset id="_ctl1_divAddedLifeCentSavings" style="DISPLAY:none">
+              <div class="fi_txt fi_bdy">
+                <label for="txtAddedLifeCentSavingsComment">Athugasemdir</label>
+                <textarea name="_ctl1:txtAddedLifeCentSavingsComment" id="_ctl1_txtAddedLifeCentSavingsComment"></textarea>
+              </div>
+            </fieldset>
+          </div>
+          
+          <div id="panelCommercialBanking" class="panel">
+            <h2 class="fi_chk"><input name="_ctl1:chkCommercialBanking" id="_ctl1_chkCommercialBanking" type="checkbox" onclick="toggleDiv(this, document.getElementById('_ctl1_divCommercialBanking'));" /> <label for="_ctl1_chkCommercialBanking">Fyrirtækjaþjónusta</label></h2>
+            <fieldset id="_ctl1_divCommercialBanking" style="DISPLAY:none">
+              <div class="fi_txt fi_bdy">
+                <label for="txtCommercialBankingComment">Athugasemdir</label>
+                <textarea name="_ctl1:txtCommercialBankingComment" id="_ctl1_txtCommercialBankingComment"></textarea>
+              </div>
+            </fieldset>
+          </div>
+          
+          <div id="panelAlmenni" class="panel">
+            <h2 class="fi_chk"><input name="_ctl1:chkAlmenni" id="_ctl1_chkAlmenni" type="checkbox" onclick="toggleDiv(this, document.getElementById('_ctl1_divAlmenni'));" /> <label for="_ctl1_chkAlmenni">Almenni lífeyrissjóðurinn</label></h2>
+            <fieldset id="_ctl1_divAlmenni" style="DISPLAY:none">
+              <div class="fi_txt fi_bdy">
+                <label for="txtAlmenniComment">Athugasemdir</label>
+                <textarea name="_ctl1:txtAlmenniComment" id="_ctl1_txtAlmenniComment"></textarea>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="fi_btn"><input type="submit" name="_ctl1:btnSendaAbendingu" value="Senda inn söluábendingu" onclick="if (typeof(Page_ClientValidate) == 'function') Page_ClientValidate(); " language="javascript" id="_ctl1_btnSendaAbendingu" /></div>
+
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+  <!-- end "pgmain" -->
+  </div>
+  </div>
+  <hr class="stream" />
+
+
+
+
+  <div class="pgextra1">
+  <div class="wrap">
+  <!-- start "pgextra1" -->
+
+
+
+    <div class="rbox">
+      <h2 class="boxhead">Titill</h2>
+      <div class="boxbody">
+        <p>Texti...</p>
+      </div>
+    </div>
+
+
+
+    <div class="offices rbox">
+      <h2 class="boxhead"><a href=" /Glitnir/Global/GlobalOfficesandSubsidiaries/">Offices and Subsidiaries</a></h2>
+      <div class="boxbody">
+        <ul>
+          <li class="parent"><a href="#">Glitnir Global</a></li>
+          <li class="parent iceland"><em>Iceland</em>
+            <ul>
+              <li><a href="#">Glitnir Iceland</a></li>
+              <li><a href="#">Innranet</a></li>
+            </ul>
+          </li>
+          <li class="parent norway"><em>Norway</em>
+            <ul>
+              <li><a href="#">Glitnir Norway</a></li>
+              <li><a href="#">BNbank</a></li>
+              <li><a href="#">Glitnir Securities</a></li>
+              <li><a href="#">Glitnir Bank</a></li>
+              <li><a href="#">Glitnir Factoring</a></li>
+              <li><a href="#">Union</a></li>
+            </ul>
+          </li>
+          <li class="parent sweden"><em>Sweden</em>
+            <ul>
+              <li><a href="#">Fischer Partners</a></li>
+            </ul>
+          </li>
+          <li class="parent denmark"><em>Denmark</em>
+            <ul>
+              <li><a href="#">Glitnir Copenhagen</a></li>
+            </ul>
+          </li>
+          <li class="parent uk"><em>United Kingdom</em>
+            <ul>
+              <li><a href="/Glitnir/UK/GlitnirLondon/">Glitnir London</a></li>
+            </ul>
+          </li>
+          <li class="parent luxembourg"><em>Luxembourg</em>
+            <ul>
+              <li><a href="/Glitnir/Luxembourg/GlitnirLuxembourg/">Glitnir Luxembourg</a></li>
+            </ul>
+          </li>
+          <li class="parent canada"><em>Canada</em>
+            <ul>
+              <li><a href="/Glitnir/Canada/GlitnirHalifax/">Glitnir Halifax</a></li>
+            </ul>
+          </li>
+          <li class="parent china"><em>China</em>
+            <ul>
+              <li><a href="/Glitnir/China/GlitnirShanghai/">Glitnir Shanghai</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  <!-- end "pgextra1" -->
+  </div>
+  </div>
+  <hr class="stream" />
+
+
+
+
+  <div class="pgextra2" id="pgextra2">
+  <div class="wrap">
+  <!-- start "pgextra2" -->
+
+
+    <div class="breadcrumbs">
+      <strong>Þú ert hér:</strong>
+      <a href="/" id="_ctl0_ucBreadCrumbs_A1">Glitnir.is</a> &gt;
+      <a href="/Einstaklingar/">Einstaklingar</a> &gt;
+      <a href="/Einstaklingar/Thjonusta/">Þjónusta</a> &gt;
+      <a href="/Einstaklingar/Thjonusta/Namsvild/">Námsvild</a>
+    </div>
+
+
+    <div class="topnav">
+      <h2 class="boxhead">Aðalvalmynd</h2>
+      <div class="boxbody">
+        <ul>
+          <li class="phonebook"><a href="#">Phonebook</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="mainnav rbox">
+      <h2 class="boxhead">Netbanki<span class="stream">, aðrar síður</span></h2>
+      <div class="boxbody">
+        <ul>
+          <li class="branch"><a href="#">Verðbréf</a></li>
+          <li class="branch"><a href="#">Lífeyrir</a></li>
+          <li class="branch"><a href="#">Bókhald</a></li>
+          <li class="branch"><a href="#">Stillingar</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="qsitesearch">
+      <h2 class="boxhead">Leit</h2>
+      <form class="boxbody" action="/Leit/" method="get">
+        <div class="fi_txt">
+          <label for="txtSearch">Leit</label>
+          <input id="txtSearch" type="text" tabindex="6" maxlength="60" name="q" accesskey="l" title="Sláðu inn leitarskilyrði hér (Flýtilykill Alt og L)" />
+        </div>
+        <fieldset class="fi_rdo">
+          <h4>Leita í:</h4>
+          <ul>
+            <li>
+              <input id="searchtype_r1" name="SearchType" value="rdSearchPhoneBook" type="radio" checked="checked" />
+              <label for="searchtype_r1">Símaskrá</label>
+            </li>
+            <li>
+              <input id="searchtype_r2" name="SearchType" value="rdSearchIntranet" type="radio" />
+              <label for="searchtype_r2">Intraneti</label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="fi_btn"><input type="submit" class="Button" value="Leita" tabindex="7" /></div>
+      </form>
+    </div>
+
+
+    <div class="ourshareprice">
+      <p>
+        <a href="http://www.glitnir.is/markadir/Markadsupplysingar/Hlutabref/Samantekt.aspx?Audkenni=GLB">Glitnir Share price:</a>
+        <em>22.30</em>
+        <span class="stockup">-0.89%</span>
+      </p>
+    </div>
+
+
+
+  <!-- end "pgextra2" -->
+  </div>
+  </div>
+  <hr class="stream" />
+
+  
+
+
+  <div class="pgfoot">
+  <div class="wrap">
+  <!-- start "pgfoot" -->
+
+
+    <div class="mainfooter">
+      <h2 class="boxhead">Um Glitni</h2>
+      <div class="boxbody">
+        <strong>Glitnir</strong> <i>|</i>
+        Kt. 5505003530 <i>|</i>
+        Sími: 440 4000 <i>|</i>
+        Fax: 440 4001 <i>|</i>
+        Þjónustuver opið: 8 - 19 <i>|</i>
+        Netfang: <a href="mailto:glitnir@glitnir.is">glitnir@glitnir.is</a> <i>|</i>
+        SWIFT: ISBAISRE
+      </div>
+    </div>
+
+
+  <!-- end "pgfoot" -->
+  </div>
+  </div>
+
+
+
+<!-- end "pgwrap" -->
+</div>
+
+  <script src="js/config.js" type="text/javascript"></script>
+  <script src="js/init.js" type="text/javascript"></script>
+  <script src="js/intranet-init.js" type="text/javascript"></script>
+</body>
+</html>
+

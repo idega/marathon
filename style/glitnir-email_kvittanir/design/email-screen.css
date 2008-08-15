@@ -1,0 +1,278 @@
+/* ***  Basics *** */
+html, body {
+  width : 100%;
+  height : 100%;
+  margin : 0;
+  padding : 0;
+  background : #f8f8f8 url(i/background.png) no-repeat 0 0;
+}
+
+.glitnir_email a { color : #bb0000; }
+.glitnir_email a:hover,
+.glitnir_email a:focus,
+.glitnir_email a:active { text-decoration : none; }
+
+.glitnir_email hr { display : none; }
+
+.glitnir_email {
+  background : #f8f8f8 url(i/background.png) no-repeat 0 0;
+  font-family : Arial, sans-serif;
+  padding-top : 18px;
+  width : 100%;
+  height : 100%;
+  font-size : 12px;
+  _font-size : 75%;
+}
+
+
+/* ***  brand header *** */
+.glitnir_email .brand {
+  position : relative;
+  width : 670px;
+  height : 88px;
+  background-color : #a30a1b;
+  margin : 0 0 10px 25px;
+  font-size : 2.5em;
+  color : #fff;
+}
+.glitnir_email .brand a {
+  color : #fff;
+  text-decoration : none;
+}
+
+.glitnir_email .brand .logo { /* the logo */
+  position : relative;
+  z-index : 1;
+  display : block;
+  float : left;
+  text-align : center;
+  text-decoration : none;
+  width : 158px;
+  height : 63px;
+  margin-right : -200px;
+  padding : 25px 0 0 0;
+  overflow : hidden;
+  _height /**/: 88px;
+}
+.glitnir_email .brand .logo i { /* image replacement */
+  position : absolute;
+  top : 0;
+  left : 0;
+  width : 100%;
+  height : 100%;
+  background : url(i/glitnir-logo.png) no-repeat 0 0;
+  _cursor : hand;
+}
+
+.glitnir_email .brand .banner { /* banner/slogan/etc. */
+  position : relative;
+  float : right;
+  display : block;
+  text-align : right;
+  padding : 0;
+  margin-top : -10px;
+  margin-left : -200px;
+  width : 670px;
+  height : 98px;
+  font-size : .67em;
+  font-weight : normal;
+  line-height : 5;
+}
+
+
+
+
+
+/* ***  content  *** */
+.glitnir_email .content {
+  clear : both;
+  background : #fff;
+  width : 668px;
+  margin : 0 0 30px 25px;
+  border : 1px solid #c4cbcf;
+  _width /**/: 670px;
+}
+
+.glitnir_email .content .copy {
+  margin : 0 20px 0 20px;
+}
+
+
+/* ***  emailtop content-header *** */
+.content .emailtop {
+  position : relative;
+  background : #c4c5c6 url(i/top-bg.png) 0 0 no-repeat;
+  margin : -1px -1px 0 -1px;
+  border-bottom : 1px solid #aaa;
+  padding : 23px 0 17px 20px;
+  _height : 1px;
+}
+.content .emailtop p {
+  color : #444;
+  font-size : .92em;
+  padding-bottom : 5px;
+  margin : -.64em 0 6px 0;
+  _margin-bottom : 7px;
+}
+.content .emailtop h1 {
+  font-size : 1.92em;
+  padding : 0;
+  margin : -.3em 0;
+  border-top : 2px solid #dfdfdf; /* white shadow in Moz+Opera (this 2px border cancels the line-wrap bug in Opera 9) */
+  _border : none;                 /* white shadow in Moz+Opera */
+}
+.content .emailtop h1:before { /* white shadow in Moz+Opera */
+  content : attr(title) " ";
+  height : 1.2em;
+  color : #fff;
+  display : block;
+  margin-bottom : -1.26em;
+  margin-left : 1px;
+}
+
+
+
+
+/* ***  footer  *** */
+.glitnir_email .footer {
+  color : #444;
+  font-size : .92em;
+  position : relative;
+  _height : 1px;
+  margin : 30px -1px -1px -1px;
+  background : #eee url(i/footer-bg.png) no-repeat 0 100%;
+  border-top : 1px solid #cbd1d5;
+}
+.glitnir_email .footer:after { display:block; clear:both; content:"."; visibility:hidden; font-size:1px; height:1px; margin-top:-1px; }
+
+.glitnir_email .footer span {
+  float : left;
+  padding : 6px 0 9px 10px;
+}
+.glitnir_email .footer .login {
+  float : right;
+  padding : 6px 35px 9px 0;
+  background : url(i/ok-symbol.png) no-repeat 94% 32%;
+}
+.glitnir_email .footer .home {
+  float : right;
+  padding : 6px 15px 9px 0;
+}
+
+
+
+.glitnir_email .attention {
+  margin : 8px;
+  width : 652px;
+  background : #eaf0f5 url(i/attention-top.png) no-repeat 0 0;
+}
+.glitnir_email .attention h4 {
+  padding : 10px 0 0 70px;
+  margin-bottom : -20px;
+}
+.glitnir_email .attention p {
+  padding : 20px 0 20px 70px;
+  min-height : 18px;
+  _height : 18px;
+  background : url(i/attention-bottom.png) no-repeat 0 100%;
+}
+
+
+
+/* ***  generic section-headers  *** */
+.glitnir_email h3,
+.glitnir_email caption {
+  font-size : 1em;
+  margin : 0;
+  padding : 5px 0 5px 20px;
+  font-weight : bold;
+  border-top : 1px solid #cbd1d5;
+  border-bottom : 1px solid #cbd1d5;
+  background : #ebebeb url(i/middle.png) 0 0 repeat-x;
+}
+
+
+
+/* ***  generic tables  *** */
+.glitnir_email table {
+  width : 100%;
+  border-collapse : collapse;
+  font-size : 1em;
+  margin : 0 0 -1px 0;
+}
+.glitnir_email table,
+.glitnir_email td,
+.glitnir_email th,
+.glitnir_email caption {
+  border : none;
+  background-color : transparent;
+  padding : 0;
+  text-align : left;
+  vertical-align : top;
+}
+.glitnir_email th,
+.glitnir_email td {
+  padding : 4px 3px 3px 20px;
+  border-bottom : 1px solid #cbd1d5;
+}
+.glitnir_email tr.hd th { padding-top : 10px; } /* table header-row */
+
+.glitnir_email th acronym:hover { border : none; }
+
+.glitnir_email th.c, /* center-aligned text */
+.glitnir_email td.c {
+  text-align : center;
+  padding-right : 5px;
+  padding-left : 5px;
+}
+.glitnir_email th.r, /* right-aligned text */
+.glitnir_email td.r,
+.glitnir_email th.num,  /* number-formatting (right-aligned + nowrap) */
+.glitnir_email td.num {
+  text-align : right;
+  padding-right : 15px;
+  padding-left : 3px;
+}
+.glitnir_email th.num,
+.glitnir_email td.num { white-space : nowrap; }
+
+.glitnir_email td.pos { color : #457a28; } /* positive numbers (green) */
+.glitnir_email td.neg { color : #ff3600; } /* negative numbers (red) */
+
+.glitnir_email tr.odd th, /* optional odd-even zebra stribing class for <tr> */
+.glitnir_email tr.odd td { background-color : #F5F5F5; }
+
+.glitnir_email tr.total th,  /* for total rows */
+.glitnir_email tr.total td {
+  padding-top : 5px;
+  border-top : 1px solid #ccc;
+  background-color : #ededed;
+}
+
+
+
+
+
+/* ***  list-table  (for simple key-value lists (e.g. "Name, Email, AccountNr. etc.))  *** */
+.glitnir_email table.list {
+  margin : 12px 0 20px 0;
+}
+.glitnir_email table.list tr {
+  border : 0;
+}
+.glitnir_email table.list th {
+  width : 130px;
+  border : none;
+  font-weight : normal;
+}
+.glitnir_email table.list td {
+  border : none;
+}
+
+
+
+
+/* ***  generic link-hover effects  *** */
+.glitnir_email a:hover,
+.glitnir_email a:focus,
+.glitnir_email a:active {  text-decoration : underline;  }
