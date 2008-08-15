@@ -4,6 +4,11 @@
     <author email="gimmi@idega.com">Grimur Jonsson</author>
   </properties>
   <body>
+    <release version="3.1.45" date="2008-08-15">
+		<action dev="palli" type="update">
+			new marathon version 3.1.36
+		</action>     
+	</release>
     <release version="3.1.44" date="2008-08-14">
 		<action dev="palli" type="update">
 			new marathon version 3.1.35
