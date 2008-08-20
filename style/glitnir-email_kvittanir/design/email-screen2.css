@@ -90,6 +90,7 @@ html, body {
   width : 668px;
   margin : 0 0 30px 25px;
   border : 1px solid #c4cbcf;
+  padding: 25px 0 0 0;
   _width /**/: 670px;
 }
 
@@ -118,7 +119,7 @@ html, body {
   font-size : 1.92em;
   padding : 0;
   margin : -.3em 0;
-  border-top : 2px solid #dfdfdf; /* white shadow in Moz+Opera (this 2px border cancels the line-wrap bug in Opera 9) */
+  /**border-top : 2px solid #dfdfdf; /* white shadow in Moz+Opera (this 2px border cancels the line-wrap bug in Opera 9) */
   _border : none;                 /* white shadow in Moz+Opera */
 }
 .content .emailtop h1:before { /* white shadow in Moz+Opera */
@@ -213,7 +214,7 @@ html, body {
 .glitnir_email th,
 .glitnir_email td {
   padding : 4px 3px 3px 20px;
-  border-bottom : 1px solid #cbd1d5;
+  /**border-bottom : 1px solid #cbd1d5;**/
 }
 .glitnir_email tr.hd th { padding-top : 10px; } /* table header-row */
 
@@ -245,7 +246,7 @@ html, body {
 .glitnir_email tr.total th,  /* for total rows */
 .glitnir_email tr.total td {
   padding-top : 5px;
-  border-top : 1px solid #ccc;
+  /**border-top : 1px solid #ccc; **/
   background-color : #ededed;
 }
 
@@ -276,3 +277,19 @@ html, body {
 .glitnir_email a:hover,
 .glitnir_email a:focus,
 .glitnir_email a:active {  text-decoration : underline;  }
+
+
+.content .stepsHeader{ 
+ font-weight : bold;
+  margin-left : 20px;
+}
+
+.content .stepsHeader .stepCurrent{
+	float: right;
+	margin-right:  40px;
+}
+
+.content .stepsFooter{
+        text-align: right;
+        margin-right : 40px;
+}
