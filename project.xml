@@ -415,5 +415,10 @@
       <name>3.1.48</name>
       <tag>EMARATHON_3_1_48</tag>
     </version>
+    <version>
+      <id>3.1.49</id>
+      <name>3.1.49</name>
+      <tag>EMARATHON_3_1_49</tag>
+    </version>
   </versions>
 </project>
